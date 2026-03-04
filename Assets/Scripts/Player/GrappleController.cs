@@ -205,12 +205,6 @@ public class GrappleController : MonoBehaviour
 
     void UpdatePulling()
     {
-        if (target == null)
-        {
-            EndPull();
-            return;
-        }
-
         Vector2 current = rb.position;
         Vector2 end = target.position;
 
@@ -231,33 +225,51 @@ public class GrappleController : MonoBehaviour
 
         float dot = Vector2.Dot(rb.linearVelocity.normalized, toTarget.normalized);
 
-        if (distance <= reachThreshold || dot < 0f)
+        if (distance <= reachThreshold || dot < 0.1f)
         {
-            rb.linearVelocity = Vector2.zero;
-            rb.position = end;
+            Debug.Log("OnDocked " + rb.position.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.position = new Vector2(rb.position.x, end.y);
+
             OnDocked();
         }
     }
 
-    void OnDocked()
+   void OnDocked()
     {
         bool isPerfect = lastAngleAtDock <= perfectAngleThreshold;
+
+        float dockY = target.position.y;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.simulated = false;
+
+        // ⭐ фиксируем позицию
+        rb.position = new Vector2(rb.position.x, dockY);
+        transform.position = new Vector2(transform.position.x, dockY);
 
         Dock dock = target.GetComponent<Dock>();
         dock?.OnDocked(this, isPerfect);
 
-        EndPull();
+        EndPull(dockY);
     }
 
-    void EndPull()
+    void EndPull(float dockY)
     {
+        // задаём правильную скорость
         rb.linearVelocity = new Vector2(
-            rb.linearVelocity.x,
+            GameManager.Instance.CurrentSpeed,
             0f
         );
 
+        // ⭐ ещё раз фиксируем Y
+        rb.position = new Vector2(rb.position.x, dockY);
+        transform.position = new Vector2(transform.position.x, dockY);
+
         if (playerMovement != null)
             playerMovement.enabled = true;
+
+        rb.simulated = true;
 
         EnterCooldown();
     }
