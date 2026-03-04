@@ -13,7 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float speed = GameManager.Instance.CurrentSpeed;
-        rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+        if (enabled)
+        {
+            float speed = GameManager.Instance.CurrentSpeed;
+            rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+        }
     }
 }

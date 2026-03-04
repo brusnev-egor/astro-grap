@@ -7,13 +7,11 @@ public class GrappleRope : MonoBehaviour
     [SerializeField] private Transform playerAnchor;
 
     [Header("Visual")]
-    [SerializeField] private Gradient colorByTension;
     [SerializeField] private float baseWidth = 0.06f;
     [SerializeField] private float stretchMultiplier = 0.4f;
     [SerializeField] private float smoothness = 12f;
 
     private LineRenderer line;
-    private float currentTension;
 
     void Awake()
     {
@@ -27,28 +25,12 @@ public class GrappleRope : MonoBehaviour
         if (!grapple.TryGetRopeVisual(out Vector2 end, out float tension))
         {
             line.enabled = false;
-            currentTension = 0f;
             return;
         }
 
         line.enabled = true;
 
-        currentTension = Mathf.Lerp(
-            currentTension,
-            tension,
-            Time.deltaTime * smoothness
-        );
-
         line.SetPosition(0, playerAnchor.position);
         line.SetPosition(1, end);
-
-        UpdateColorAndWidth();
-    }
-
-    void UpdateColorAndWidth()
-    {
-        Color c = colorByTension.Evaluate(currentTension);
-        line.startColor = c;
-        line.endColor = c;
     }
 }

@@ -3138,7 +3138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ef6f73adaeb47d4a1c66c911f30f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistanceForDifficulty: 100
+  maxDistanceForDifficulty: 1000
   baseSpeed: 8
   maxSpeed: 18
   speedCurve:
@@ -3242,7 +3242,7 @@ Transform:
   m_GameObject: {fileID: 1887456399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.1, y: 0, z: 0}
+  m_LocalPosition: {x: -6.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3256,7 +3256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887456399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8212f534fa6c461bb21ad0accab0628, type: 3}
   m_Name: 
@@ -3339,36 +3339,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grapple: {fileID: 1887456406}
   playerAnchor: {fileID: 230479356}
-  colorByTension:
-    serializedVersion: 2
-    key0: {r: 0, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 0.8352941, b: 0, a: 1}
-    key2: {r: 1, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 47995
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
   baseWidth: 0.06
   stretchMultiplier: 0.4
   smoothness: 12
@@ -3510,7 +3480,9 @@ MonoBehaviour:
   ropeFlySpeed: 65
   pullAcceleration: 150
   maxPullSpeed: 30
-  reachThreshold: 0.08
+  reachThreshold: 0.05
+  minPullMultiplier: 0.6
+  maxPullMultiplier: 1.4
   rotationSpeed: 10
   maxTiltAngle: 35
   returnSmoothTime: 0.2
@@ -3518,7 +3490,7 @@ MonoBehaviour:
   dangerousRopeLength: 15
   breakDelay: 0.25
   cooldownTime: 0.2
-  perfectThreshold: 0.5
+  perfectAngleThreshold: 20
 --- !u!114 &1887456407
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,6 +29,9 @@ public class GrappleController : MonoBehaviour
     [SerializeField] private float maxPullSpeed = 25f;
     [SerializeField] private float reachThreshold = 0.05f;
 
+    [SerializeField] private float minPullMultiplier = 0.6f;
+    [SerializeField] private float maxPullMultiplier = 1.4f;
+
     [Header("Rotation")]
     [SerializeField] private float rotationSpeed = 10f;
     [SerializeField] private float maxTiltAngle = 35f;
@@ -45,7 +48,7 @@ public class GrappleController : MonoBehaviour
     [SerializeField] private float cooldownTime = 0.15f;
 
     [Header("Perfect Dock")]
-    [SerializeField] private float perfectThreshold = 0.85f;
+    [SerializeField] private float perfectAngleThreshold = 20f;
 
     private Rigidbody2D rb;
     private Camera cam;
@@ -58,11 +61,12 @@ public class GrappleController : MonoBehaviour
     private float grappleStartY;
 
     private float returnVelocityY;
-    private float currentPullSpeed;
     private float cooldownTimer;
     private float breakTimer;
     private float currentAngle;
-    private float lastTensionAtDock;
+
+    private float lastAngleAtDock;
+    private float anglePullMultiplier;
 
     void Awake()
     {
@@ -104,9 +108,7 @@ public class GrappleController : MonoBehaviour
         }
     }
 
-    // ======================
-    // INPUT
-    // ======================
+    // ================= INPUT =================
 
     void HandleInput()
     {
@@ -121,6 +123,7 @@ public class GrappleController : MonoBehaviour
 
         Vector3 hitPoint = ray.GetPoint(enter);
         Vector2 tapWorld = new Vector2(hitPoint.x, hitPoint.y);
+
         Vector2 dir = tapWorld - (Vector2)playerAnchor.position;
 
         if (dir.x <= 0f)
@@ -146,9 +149,7 @@ public class GrappleController : MonoBehaviour
         state = State.RopeFlying;
     }
 
-    // ======================
-    // ROPE FLYING
-    // ======================
+    // ================= ROPE =================
 
     void UpdateRopeFlying()
     {
@@ -167,24 +168,36 @@ public class GrappleController : MonoBehaviour
         UpdateTension();
 
         if (Vector2.Distance(ropeTipPosition, target.position) <= 0.05f)
-        {
             StartPull();
-        }
     }
 
-    // ======================
-    // PULLING
-    // ======================
+    // ================= PULL =================
 
     void StartPull()
     {
         state = State.Pulling;
 
-        lastTensionAtDock = tension01;
-        currentPullSpeed = GameManager.Instance.CurrentSpeed + maxPullSpeed * 0.5f;
+        Vector2 toTarget = (Vector2)target.position - rb.position;
+        Vector2 dir = toTarget.normalized;
 
-        rb.linearVelocity = Vector2.zero;
+        float angle = Vector2.Angle(Vector2.right, dir);
+        lastAngleAtDock = angle;
+
+        float normalized = Mathf.Clamp01(angle / 90f);
+
+        float slowdownFactor = 1f - normalized * normalized;
+
+        float newX = rb.linearVelocity.x * slowdownFactor;
+
         rb.isKinematic = true;
+
+        rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
+
+        anglePullMultiplier = Mathf.Lerp(
+            maxPullMultiplier,
+            minPullMultiplier,
+            normalized
+        );
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -205,35 +218,30 @@ public class GrappleController : MonoBehaviour
         float distance = toTarget.magnitude;
         Vector2 dir = toTarget.normalized;
 
-        // ускорение
-        rb.linearVelocity += dir * pullAcceleration * Time.fixedDeltaTime;
+        float accel = pullAcceleration * anglePullMultiplier;
 
-        if (rb.linearVelocity.magnitude > maxPullSpeed)
-        {
-            rb.linearVelocity =
-                rb.linearVelocity.normalized * maxPullSpeed;
-        }
+        rb.linearVelocity += dir * accel * Time.fixedDeltaTime;
+
+        float maxSpeed = maxPullSpeed * anglePullMultiplier;
+
+        if (rb.linearVelocity.magnitude > maxSpeed)
+            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
 
         UpdateRotation(dir);
 
-        // ⭐ КЛЮЧЕВОЕ
-        // если мы уже движемся в сторону, противоположную target,
-        // значит пролетели станцию
         float dot = Vector2.Dot(rb.linearVelocity.normalized, toTarget.normalized);
 
         if (distance <= reachThreshold || dot < 0f)
         {
-            rb.position = end;
             rb.linearVelocity = Vector2.zero;
+            rb.position = end;
             OnDocked();
         }
     }
 
     void OnDocked()
     {
-        bool isPerfect = lastTensionAtDock >= perfectThreshold;
-
-        rb.MovePosition(new Vector2(rb.position.x, target.position.y));
+        bool isPerfect = lastAngleAtDock <= perfectAngleThreshold;
 
         Dock dock = target.GetComponent<Dock>();
         dock?.OnDocked(this, isPerfect);
@@ -243,8 +251,10 @@ public class GrappleController : MonoBehaviour
 
     void EndPull()
     {
-        rb.isKinematic = false;
-        // rb.linearVelocity = Vector2.zero;
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            0f
+        );
 
         if (playerMovement != null)
             playerMovement.enabled = true;
@@ -252,9 +262,7 @@ public class GrappleController : MonoBehaviour
         EnterCooldown();
     }
 
-    // ======================
-    // ROTATION
-    // ======================
+    // ================= ROTATION =================
 
     void UpdateRotation(Vector2 direction)
     {
@@ -288,9 +296,7 @@ public class GrappleController : MonoBehaviour
             Quaternion.Euler(0f, 0f, currentAngle);
     }
 
-    // ======================
-    // TENSION
-    // ======================
+    // ================= TENSION =================
 
     void UpdateTension()
     {
@@ -306,14 +312,10 @@ public class GrappleController : MonoBehaviour
             breakTimer += Time.fixedDeltaTime;
 
             if (breakTimer >= breakDelay)
-            {
                 BreakRope();
-            }
         }
         else
-        {
             breakTimer = 0f;
-        }
     }
 
     void BreakRope()
@@ -322,7 +324,6 @@ public class GrappleController : MonoBehaviour
         tension01 = 0f;
         breakTimer = 0f;
 
-        rb.bodyType = RigidbodyType2D.Dynamic;
         rb.linearVelocity = Vector2.zero;
 
         if (playerMovement != null)
@@ -331,9 +332,7 @@ public class GrappleController : MonoBehaviour
         state = State.Returning;
     }
 
-    // ======================
-    // RETURN
-    // ======================
+    // ================= RETURN =================
 
     void UpdateReturning()
     {
@@ -354,9 +353,7 @@ public class GrappleController : MonoBehaviour
         );
 
         if (Mathf.Abs(rb.position.y - grappleStartY) < 0.05f)
-        {
             FinishReturning();
-        }
     }
 
     void FinishReturning()
@@ -369,9 +366,7 @@ public class GrappleController : MonoBehaviour
         cooldownTimer = cooldownTime;
     }
 
-    // ======================
-    // COOLDOWN
-    // ======================
+    // ================= COOLDOWN =================
 
     void EnterCooldown()
     {
