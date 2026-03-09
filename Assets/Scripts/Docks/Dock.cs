@@ -15,12 +15,4 @@ public class Dock : MonoBehaviour
             AudioManager.Instance.Play(AudioManager.Instance.dockSuccess, 1f);
         }
     }
-
-
-
-    // void OnDrawGizmosSelected()
-    // {
-    //     Gizmos.color = Color.cyan;
-    //     Gizmos.DrawWireSphere(transform.position, 20f); // dangerousRopeLength
-    // }
 }

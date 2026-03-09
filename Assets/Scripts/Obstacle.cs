@@ -4,12 +4,13 @@ public class Obstacle : MonoBehaviour
 {
     private bool isTriggered;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("collide trigger" + collision.tag);
         if (isTriggered)
             return;
 
-        if (!collision.collider.CompareTag("Player"))
+        if (!collision.CompareTag("Player"))
             return;
 
         isTriggered = true;

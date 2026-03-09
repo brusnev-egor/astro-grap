@@ -7,6 +7,14 @@
       "dependencies": {},
       "hash": "1cdf31613ea294970560f0bbb2ee2d1f0cd16a22"
     },
+    "com.tripo3d.unitybridge": {
+      "version": "file:/Users/egorbrusnev/Downloads/Tripo3d_Unity_Bridge",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -266,6 +274,15 @@
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
+      }
+    },
+    "com.unity.visualeffectgraph": {
+      "version": "17.0.3",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.shadergraph": "17.0.3",
+        "com.unity.render-pipelines.core": "17.0.3"
       }
     },
     "com.unity.visualscripting": {

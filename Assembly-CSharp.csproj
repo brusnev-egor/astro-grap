@@ -74,8 +74,10 @@
     <Compile Include="Assets/Scripts/Obstacles/FastHazardObstacle.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants/Chunk_FastIncoming.cs" />
     <Compile Include="Assets/Scripts/UI/HUDDistance.cs" />
+    <Compile Include="Assets/Scripts/Player/PlayerShield.cs" />
     <Compile Include="Assets/Scripts/Player/ShipEngine.cs" />
     <Compile Include="Assets/Scripts/UI/DangerIndicatorUI.cs" />
+    <Compile Include="Assets/Scripts/Docks/Dock_Shield.cs" />
     <Compile Include="Assets/Scripts/Docks/TurboDock.cs" />
     <Compile Include="Assets/Scripts/Chunks/WorldChunk.cs" />
     <Compile Include="Assets/Scripts/Biomes/BiomeManager.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets/Scripts/Chunks/ChunkIntensity.cs" />
     <Compile Include="Assets/Scripts/UI/PerfectPopup.cs" />
     <Compile Include="Assets/Scripts/Player/GrappleRope.cs" />
+    <Compile Include="Assets/Scripts/Player/DestroyAfterParticles.cs" />
     <Compile Include="Assets/Scripts/System/TurboVisualController.cs" />
     <Compile Include="Assets/Scripts/Parallax/ParallaxTiling.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants/Chunk_MediumVerticalShift.cs" />
@@ -1269,8 +1272,16 @@
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Profiling.Core">
@@ -1387,6 +1398,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Tripo3D.UnityBridge.Editor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

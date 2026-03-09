@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.tayx.graphy": "https://github.com/Tayx94/graphy.git",
+    "com.tripo3d.unitybridge": "file:/Users/egorbrusnev/Downloads/Tripo3d_Unity_Bridge",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "3.1.5",
     "com.unity.collab-proxy": "2.11.3",
@@ -12,6 +13,7 @@
     "com.unity.render-pipelines.universal": "17.0.3",
     "com.unity.timeline": "1.8.7",
     "com.unity.ugui": "2.0.0",
+    "com.unity.visualeffectgraph": "17.0.3",
     "com.unity.visualscripting": "1.9.5",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

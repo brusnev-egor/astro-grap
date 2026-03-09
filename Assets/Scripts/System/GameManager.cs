@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject playerObject;
+    [SerializeField] private GameObject explosionPrefab;
 
     [SerializeField] private DistanceTracker distanceTracker;
     // [SerializeField] private CameraOrthoPunch cameraPunch;
@@ -38,18 +39,34 @@ public class GameManager : MonoBehaviour
         if (isGameOver)
             return;
 
-        CameraImpulse.Instance.Fire(1.2f);
-        AudioManager.Instance.Play(AudioManager.Instance.hit, 1f);
+        if (playerObject.TryGetComponent(out PlayerShield playerShield) && playerShield.IsShieldActive())
+        {
+            playerShield.BreakShield();
+            return;
+        }
 
         isGameOver = true;
 
+        Vector3 pos = playerObject.transform.position;
+
+        // взрыв
+        if (explosionPrefab != null)
+            Instantiate(explosionPrefab, pos, Quaternion.identity);
+
+        // камера
+        CameraImpulse.Instance.Fire(1.2f);
+
+        // звук
+        AudioManager.Instance.Play(AudioManager.Instance.hit, 1f);
+
+        // уничтожаем игрока
+        Destroy(playerObject);
+
         Debug.Log("GAME OVER");
 
-        // временно — пауза
         Time.timeScale = 0f;
         CurrentSpeed = 0f;
 
-        // UI
         ComboSystem.Instance.ResetCombo();
     }
 

@@ -14,20 +14,20 @@ public class ShipAccelerationTilt : MonoBehaviour
 
     void Update()
     {
-        float speed = rb.linearVelocity.x;
-        float accel = (speed - lastSpeed) / Time.deltaTime;
-        lastSpeed = speed;
+        // float speed = rb.linearVelocity.x;
+        // float accel = (speed - lastSpeed) / Time.deltaTime;
+        // lastSpeed = speed;
 
-        float targetTilt =
-            Mathf.Clamp(-accel * tiltMultiplier, -maxTilt, maxTilt);
+        // float targetTilt =
+        //     Mathf.Clamp(-accel * tiltMultiplier, -maxTilt, maxTilt);
 
-        currentTilt = Mathf.Lerp(
-            currentTilt,
-            targetTilt,
-            Time.deltaTime * smooth
-        );
+        // currentTilt = Mathf.Lerp(
+        //     currentTilt,
+        //     targetTilt,
+        //     Time.deltaTime * smooth
+        // );
 
-        visual.localRotation =
-            Quaternion.Euler(0f, 0f, currentTilt);
+        // visual.localRotation =
+        //     Quaternion.Euler(0f, 0f, currentTilt);
     }
 }
