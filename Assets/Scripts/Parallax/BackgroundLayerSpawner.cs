@@ -3,18 +3,25 @@ using System.Collections.Generic;
 
 public class BackgroundLayerSpawner : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private Transform worldTransform;
+
+    [Header("Spawn Entries")]
+    [SerializeField] private BackgroundSpawnEntry[] entries;
+
     [Header("Settings")]
-    [SerializeField] private Transform cameraTransform;
-    [SerializeField] private GameObject[] prefabs;
     [SerializeField] private float chunkWidth = 100f;
     [SerializeField] private int chunksAhead = 3;
+    [Header("Lanes")]
+    [SerializeField] private float[] spawnLanes;
+    [SerializeField] private float laneRandomOffset = 5f;
 
     private List<GameObject> activeChunks = new();
     private float nextSpawnX;
 
     void Start()
     {
-        nextSpawnX = cameraTransform.position.x - chunkWidth;
+        nextSpawnX = -chunkWidth;
 
         for (int i = 0; i < chunksAhead; i++)
         {
@@ -24,34 +31,95 @@ public class BackgroundLayerSpawner : MonoBehaviour
 
     void Update()
     {
-        if (cameraTransform.position.x + chunkWidth > nextSpawnX - chunkWidth)
+        float worldDistance = -worldTransform.position.x;
+
+        if (worldDistance + chunkWidth > nextSpawnX - chunkWidth)
         {
             SpawnChunk();
         }
 
-        Cleanup();
+        Cleanup(worldDistance);
     }
 
     void SpawnChunk()
     {
-        int index = Random.Range(0, prefabs.Length);
+        BackgroundSpawnEntry entry = PickEntry();
 
-        Vector3 pos = new Vector3(nextSpawnX, transform.position.y, transform.position.z);
+        if (entry == null)
+        {
+            nextSpawnX += chunkWidth;
+            return;
+        }
 
-        GameObject chunk = Instantiate(prefabs[index], pos, prefabs[index].transform.rotation, transform);
+        Vector3 pos = new Vector3(
+            nextSpawnX,
+            PickLaneY(),
+            transform.position.z
+        );
+
+        GameObject chunk = Instantiate(
+            entry.prefab,
+            pos,
+            entry.prefab.transform.rotation,
+            transform
+        );
 
         activeChunks.Add(chunk);
 
         nextSpawnX += chunkWidth;
     }
 
-    void Cleanup()
+    BackgroundSpawnEntry PickEntry()
     {
-        float cameraLeftEdge = cameraTransform.position.x - chunkWidth * 2f;
+        List<BackgroundSpawnEntry> candidates = new();
+
+        foreach (var entry in entries)
+        {
+            if (entry.prefab == null)
+                continue;
+
+            if (Random.value <= entry.spawnChance)
+                candidates.Add(entry);
+        }
+
+        if (candidates.Count == 0)
+            return null;
+
+        float totalWeight = 0f;
+
+        foreach (var c in candidates)
+            totalWeight += c.weight;
+
+        float roll = Random.value * totalWeight;
+
+        foreach (var c in candidates)
+        {
+            roll -= c.weight;
+            if (roll <= 0f)
+                return c;
+        }
+
+        return candidates[0];
+    }
+
+    float PickLaneY()
+    {
+        if (spawnLanes == null || spawnLanes.Length == 0)
+            return transform.position.y;
+
+        float lane = spawnLanes[Random.Range(0, spawnLanes.Length)];
+
+        // return lane + Random.Range(-laneRandomOffset, laneRandomOffset);
+        return lane;
+    }
+
+    void Cleanup(float worldDistance)
+    {
+        float destroyX = worldDistance - chunkWidth * 2f;
 
         for (int i = activeChunks.Count - 1; i >= 0; i--)
         {
-            if (activeChunks[i].transform.position.x < cameraLeftEdge)
+            if (activeChunks[i].transform.position.x < destroyX)
             {
                 Destroy(activeChunks[i]);
                 activeChunks.RemoveAt(i);

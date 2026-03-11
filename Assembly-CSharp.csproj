@@ -68,6 +68,7 @@
     <Compile Include="Assets/Scripts/System/WorldShifter.cs" />
     <Compile Include="Assets/Scripts/Obstacle.cs" />
     <Compile Include="Assets/Scripts/System/AudioManager.cs" />
+    <Compile Include="Assets/Scripts/Parallax/NebulaParallax.cs" />
     <Compile Include="Assets/Scripts/Camera/ComboVignette.cs" />
     <Compile Include="Assets/Scripts/Docks/DockEnergySwirl.cs" />
     <Compile Include="Assets/Scripts/Biomes/BiomeData.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="Assets/Scripts/Player/ShipAccelerationTilt.cs" />
     <Compile Include="Assets/Scripts/Player/ShipIdleFloat.cs" />
     <Compile Include="Assets/Scripts/Obstacles/MovingObstacle.cs" />
+    <Compile Include="Assets/Scripts/Parallax/BackgroundSpawnEntry.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants/WorldChunkBase.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundTiling.cs" />
     <Compile Include="Assets/Scripts/System/GameManager.cs" />
