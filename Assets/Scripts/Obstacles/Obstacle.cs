@@ -6,7 +6,6 @@ public class Obstacle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collide trigger" + collision.tag);
         if (isTriggered)
             return;
 

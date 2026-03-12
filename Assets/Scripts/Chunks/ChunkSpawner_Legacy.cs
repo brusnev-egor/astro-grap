@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
-public class ChunkSpawner : MonoBehaviour
+public class ChunkSpawner_Legacy : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform world;
@@ -17,6 +17,9 @@ public class ChunkSpawner : MonoBehaviour
     [SerializeField] private ChunkDefinition[] easyChunks;
     [SerializeField] private ChunkDefinition[] mediumChunks;
     [SerializeField] private ChunkDefinition[] riskyChunks;
+
+    [SerializeField] float slot0 = 4f;
+    [SerializeField] float slot1 = 11f;
 
     private readonly List<ActiveChunk> activeChunks = new();
 
@@ -180,13 +183,13 @@ public class ChunkSpawner : MonoBehaviour
 
     ChunkDefinition[] GetPool(ChunkIntensity intensity)
     {
-        if (intensity == ChunkIntensity.Risky)
-        {
-            float multiplier = DifficultyManager.Instance.RiskyMultiplier;
+        // if (intensity == ChunkIntensity.Risky)
+        // {
+        //     float multiplier = DifficultyManager.Instance.RiskyMultiplier;
 
-            if (Random.value > multiplier)
-                return easyChunks;
-        }
+        //     if (Random.value > multiplier)
+        //         return easyChunks;
+        // }
 
         return intensity switch
         {

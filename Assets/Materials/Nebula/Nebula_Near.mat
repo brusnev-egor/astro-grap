@@ -59,12 +59,12 @@ Material:
     - _MacroContrast: 2
     - _MacroDensity: 0.84
     - _MacroScale: 2
-    - _MaskScale: 1.08
+    - _MaskScale: 0.7
     - _NebulaScale: 0.5
     - _NoiseScale1: 50
     - _NoiseScale2: 120
     - _NoiseScale3: 150
-    - _Opacity: 0.1
+    - _Opacity: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WarpAmount: 0.15

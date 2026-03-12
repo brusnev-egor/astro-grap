@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public enum DifficultyLevel
+{
+    Easy,
+    Medium,
+    Hard
+}
+
 public class DifficultyManager : MonoBehaviour
 {
     public static DifficultyManager Instance { get; private set; }
@@ -12,9 +19,6 @@ public class DifficultyManager : MonoBehaviour
     [SerializeField] private float maxSpeed = 18f;
     [SerializeField] private AnimationCurve speedCurve;
 
-    [Header("Chunk Weights Multiplier")]
-    [SerializeField] private AnimationCurve riskyChanceCurve;
-
     [Header("Turbo")]
     [SerializeField] private float turboSpeedBonus = 6f;
     [SerializeField] private float turboDuration = 3f;
@@ -24,7 +28,7 @@ public class DifficultyManager : MonoBehaviour
 
     public float Difficulty01 { get; private set; }
     public float CurrentSpeed { get; private set; }
-    public float RiskyMultiplier { get; private set; }
+    public DifficultyLevel CurrentDifficulty;
 
     void Awake()
     {
@@ -52,7 +56,7 @@ public class DifficultyManager : MonoBehaviour
 
     void UpdateRisk()
     {
-        RiskyMultiplier = riskyChanceCurve.Evaluate(Difficulty01);
+        // RiskyMultiplier = riskyChanceCurve.Evaluate(Difficulty01);
     }
 
     void UpdateTurbo()

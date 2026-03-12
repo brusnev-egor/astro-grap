@@ -7,7 +7,6 @@ public class AsteroidIdleRotation : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Rotate = " + rotationSpeed);
         transform.Rotate(rotationSpeed * Time.deltaTime * rotationAxis);
     }
 }

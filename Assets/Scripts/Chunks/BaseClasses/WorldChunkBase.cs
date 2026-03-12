@@ -5,7 +5,12 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk
     protected ChunkContext context;
     protected bool isActive;
 
-    private float chunkWidth = 14f;
+    protected virtual float ChunkWidth {
+        get
+        {
+            return 15f;
+        }
+    }
 
     public virtual void Initialize(ChunkContext context)
     {
@@ -27,11 +32,12 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk
     #if UNITY_EDITOR
         void OnDrawGizmos()
         {
+        Debug.Log("Draw gizmo");
             Gizmos.color = Color.cyan;
 
             Gizmos.DrawWireCube(
-                transform.position + new Vector3(chunkWidth / 2f, 0f, 0f),
-                new Vector3(chunkWidth, 8f, 0.1f)
+                transform.position + new Vector3(ChunkWidth / 2f, 0f, 0f),
+                new Vector3(ChunkWidth, 8f, 0.1f)
             );
         }
     #endif

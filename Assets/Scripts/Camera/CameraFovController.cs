@@ -125,7 +125,6 @@ public class CameraFovController : MonoBehaviour
 
     void ApplyFov(float value)
     {
-        Debug.Log("Apply fov = " + value);
         var lens = vcam.Lens;
         lens.FieldOfView = value;
         vcam.Lens = lens;

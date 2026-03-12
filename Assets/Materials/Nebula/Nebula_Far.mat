@@ -56,6 +56,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Density: 0.9
+    - _MacroContrast: 2
+    - _MacroDensity: 0.2
+    - _MacroScale: 2
     - _MaskScale: 0.8
     - _NebulaScale: 0.5
     - _NoiseScale1: 50
