@@ -56,7 +56,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Density: 1.2
-    - _MaskScale: 0.6
+    - _MacroContrast: 2
+    - _MacroDensity: 0.84
+    - _MacroScale: 2
+    - _MaskScale: 1.08
     - _NebulaScale: 0.5
     - _NoiseScale1: 50
     - _NoiseScale2: 120
@@ -64,6 +67,9 @@ Material:
     - _Opacity: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _WarpAmount: 0.15
+    - _WarpScale: 30
+    - _WarpStrength: 1
     m_Colors:
     - _ColorA: {r: 0.32156864, g: 0.1254902, b: 0.6901961, a: 0}
     - _ColorB: {r: 1, g: 0.23137255, b: 0.654902, a: 0}
@@ -73,5 +79,6 @@ Material:
     - _Speed2: {r: 0.02, g: 0.015, b: 0, a: 0}
     - _Speed3: {r: 0.01, g: -0.02, b: 0, a: 0}
     - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _WarpSpeed: {r: 0.02, g: -0.015, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

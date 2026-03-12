@@ -64,6 +64,9 @@ Material:
     - _Opacity: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _WarpAmount: 0.15
+    - _WarpScale: 30
+    - _WarpStrength: 1
     m_Colors:
     - _ColorA: {r: 0.105882354, g: 0.0627451, b: 0.21176471, a: 0}
     - _ColorB: {r: 0.14509805, g: 0.09803922, b: 0.35686275, a: 0}
@@ -73,5 +76,6 @@ Material:
     - _Speed2: {r: 0.02, g: 0.015, b: 0, a: 0}
     - _Speed3: {r: 0.01, g: -0.02, b: 0, a: 0}
     - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _WarpSpeed: {r: 0.02, g: -0.015, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
