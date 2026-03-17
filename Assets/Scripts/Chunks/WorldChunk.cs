@@ -18,11 +18,23 @@ public interface IWorldChunk
     void OnExitView();
 }
 
+public interface IChunkComponent
+{
+    void OnChunkInitialize(WorldChunkBase chunk, ChunkContext context);
+    void OnChunkEnterView();
+    void OnChunkExitView();
+    void OnSetParams(ChunkParams chunkParams);
+}
+
+public interface IConfigurableChunk
+{
+    void Apply(ChunkParams parameters);
+}
+
+
 class ActiveChunk
 {
     public MonoBehaviour behaviour;
     public IWorldChunk chunk;
     public bool isInView;
-
 }
-

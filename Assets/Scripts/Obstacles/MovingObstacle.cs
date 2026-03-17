@@ -7,7 +7,7 @@ public class MovingObstacle : Obstacle
     [SerializeField] private float speed = 1.5f;
 
     private Vector3 startLocalPos;
-    private bool isActive;
+    [SerializeField] private bool isActive = true;
     private float timeOffset;
 
     void Awake()

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ChunkSizeConfig
   m_EditorClassIdentifier: 
   easyChunkLength: 25
-  mediumChunkLength: 15
+  mediumChunkLength: 20
   hardChunkLength: 10

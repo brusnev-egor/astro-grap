@@ -10,8 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0fc70ce492b14b40b294a3bc13584a0, type: 3}
-  m_Name: SituationEasy_Dock
+  m_Name: Sit_M_2D_1O
   m_EditorClassIdentifier: 
   chunks:
-  - {fileID: 5558849954797771919, guid: c66730ce1bc354ff084c590b56ebb429, type: 3}
-  weight: 1
+  - prefab: {fileID: 8999637947124858685, guid: ee20910c56e784d95b2ac52c0c46cf97, type: 3}
+    parameters:
+      random: 1
+      dockCount: 2
+      obstacleCount: 1
+      dockLanes: 
+      obstacleLanes: 
+  weight: 2

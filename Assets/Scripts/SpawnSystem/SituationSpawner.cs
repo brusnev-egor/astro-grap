@@ -10,7 +10,7 @@ public class SituationSpawner : MonoBehaviour
 
     [Header("Spawn settings")]
     [SerializeField] private int situationsAhead = 3;
-    [SerializeField] private float destroyBehindDistance = 40f;
+    [SerializeField] private float destroyBehindDistance = 60f;
 
     private List<ActiveChunk> activeChunks = new();
 
@@ -39,22 +39,24 @@ public class SituationSpawner : MonoBehaviour
     {
         SituationDefinition situation = director.GetNextSituation();
 
-        foreach (var chunkPrefab in situation.chunks)
+        foreach (var entry in situation.chunks)
         {
-            GameObject chunkGO = Instantiate(chunkPrefab, world);
+            GameObject chunkGO = Instantiate(entry.prefab, world);
+
+            
+            if (chunkGO.TryGetComponent<IConfigurableChunk>(out var configurableChunk))
+                configurableChunk.Apply(entry.parameters);
 
             chunkGO.transform.localPosition =
                 new Vector3(nextChunkX, 0f, 0f);
 
-            IWorldChunk chunk = chunkGO.GetComponent<IWorldChunk>();
-
-            if (chunk == null)
+            if (!chunkGO.TryGetComponent<IWorldChunk>(out var chunk))
             {
                 Debug.LogError("Chunk prefab must implement IWorldChunk");
                 continue;
             }
 
-            ChunkContext context = new ChunkContext
+            ChunkContext context = new()
             {
                 WorldRoot = world,
                 MainCamera = mainCamera
@@ -135,17 +137,16 @@ public class SituationSpawner : MonoBehaviour
 
     private float GetChunkLength()
     {
-        // switch(CurrentDifficulty)
-        // {
-        //     case DifficultyLevel.Medium:
-        //         return mediumChunkLength;
+        switch(DifficultyManager.Instance.CurrentDifficulty)
+        {
+            case DifficultyLevel.Medium:
+                return ChunkSizeConfigGetter.MediumChunkLength;
 
-        //     case DifficultyLevel.Hard:
-        //         return hardChunkLength;
+            case DifficultyLevel.Hard:
+                return ChunkSizeConfigGetter.HardChunkLength;
 
-        //     default:
-        //         return easyChunkLength;
-        // }
-        return ChunkSizeConfigGetter.EasyChunkLength;
+            default:
+                return ChunkSizeConfigGetter.EasyChunkLength;
+        }
     }
 }

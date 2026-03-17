@@ -10,6 +10,9 @@ public class CameraFovController : MonoBehaviour
     [Header("Base")]
     [SerializeField] private float baseFov = 36f;
 
+    [Header("Difficulty FOV")]
+    [SerializeField] private float fovChangeSpeed = 20f;
+
     [Header("Turbo")]
     [SerializeField] private float turboFovBonus = 6f;
     [SerializeField] private float turboInDuration = 0.25f;
@@ -25,6 +28,8 @@ public class CameraFovController : MonoBehaviour
 
     private float punchTimer;
     private float punchAmount;
+    private float currentFov;
+    private float targetFov;
 
     void Awake()
     {
@@ -39,11 +44,15 @@ public class CameraFovController : MonoBehaviour
             );
         }
 
-        ApplyFov(baseFov);
+        currentFov = baseFov;
+        targetFov = baseFov;
+
+        ApplyFov(currentFov);
     }
 
     void Update()
     {
+        UpdateBaseFov();
         UpdateTurbo();
         UpdatePunch();
         ApplyFinalFov();
@@ -109,6 +118,23 @@ public class CameraFovController : MonoBehaviour
         punchTimer = punchDuration;
     }
 
+    public void ExpandFov(float newFov)
+    {
+        targetFov = newFov;
+    }
+
+    void UpdateBaseFov()
+    {
+        if (currentFov != targetFov)
+        {
+            currentFov = Mathf.MoveTowards(
+                currentFov,
+                targetFov,
+                fovChangeSpeed * Time.deltaTime
+            );
+        }
+    }
+
     // =========================
     // APPLY
     // =========================
@@ -116,7 +142,7 @@ public class CameraFovController : MonoBehaviour
     void ApplyFinalFov()
     {
         float finalFov =
-            baseFov +
+            currentFov +
             turboOffset +
             GetPunchOffset();
 

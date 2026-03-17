@@ -4,13 +4,40 @@ using System.Linq;
 public class SituationDirector : MonoBehaviour
 {
     [Header("Situation pools")]
+    [SerializeField] private SituationDefinition tutorialSituation;
     [SerializeField] private SituationDefinition[] easySituations;
     [SerializeField] private SituationDefinition[] mediumSituations;
     [SerializeField] private SituationDefinition[] hardSituations;
 
+    private int situationsCount;
+    private DifficultyLevel currentDifficulty;
+
+    void Start()
+    {
+        situationsCount = 0;
+    }
+
     public SituationDefinition GetNextSituation()
     {
+        situationsCount++;
+
+        if (situationsCount == 1)
+        {
+            // return tutorialSituation;
+        }
         DifficultyLevel difficulty = DifficultyManager.Instance.CurrentDifficulty;
+        if (currentDifficulty != difficulty)
+        {
+            currentDifficulty = difficulty;
+            if (difficulty == DifficultyLevel.Medium)
+            {
+                // Medium transition
+            }
+            if (difficulty == DifficultyLevel.Hard)
+            {
+                // Hard transition
+            }
+        }
 
         SituationDefinition[] pool = difficulty switch
         {
@@ -20,7 +47,8 @@ public class SituationDirector : MonoBehaviour
             _ => easySituations
         };
 
-        return PickWeighted(pool);
+        // return PickWeighted(pool);
+        return PickWeighted(mediumSituations);
     }
 
     SituationDefinition PickWeighted(SituationDefinition[] defs)

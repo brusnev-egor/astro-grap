@@ -572,6 +572,10 @@
       <HintPath>Library/PackageCache/com.unity.ext.nunit@60ef35ffd3cd/net40/unity-custom/nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>/Users/egorbrusnev/Downloads/Tripo3d_Unity_Bridge/Editor/Plugins/websocket-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@e566cd3e7623/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -602,10 +606,6 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>/Users/egorbrusnev/Downloads/Tripo3d_Unity_Bridge/Editor/Plugins/websocket-sharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1284,12 +1284,12 @@
       <HintPath>Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Collections.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualEffectGraph.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Profiling.Core">

@@ -12,16 +12,19 @@ public class BackgroundLayerSpawner : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float chunkWidth = 100f;
     [SerializeField] private int chunksAhead = 3;
+
     [Header("Lanes")]
     [SerializeField] private float[] spawnLanes;
     [SerializeField] private float laneRandomOffset = 5f;
 
     private List<GameObject> activeChunks = new();
-    private float nextSpawnX;
+
+    // 👉 теперь это "дистанция", а не world position
+    private float nextSpawnDistance;
 
     void Start()
     {
-        nextSpawnX = -chunkWidth;
+        nextSpawnDistance = 0f;
 
         for (int i = 0; i < chunksAhead; i++)
         {
@@ -33,7 +36,8 @@ public class BackgroundLayerSpawner : MonoBehaviour
     {
         float worldDistance = -worldTransform.position.x;
 
-        if (worldDistance + chunkWidth > nextSpawnX - chunkWidth)
+        // ✅ правильный spawn loop (без дыр)
+        while (worldDistance + chunksAhead * chunkWidth > nextSpawnDistance)
         {
             SpawnChunk();
         }
@@ -45,28 +49,28 @@ public class BackgroundLayerSpawner : MonoBehaviour
     {
         BackgroundSpawnEntry entry = PickEntry();
 
-        if (entry == null)
-        {
-            nextSpawnX += chunkWidth;
-            return;
-        }
+        float spawnX = nextSpawnDistance;
 
         Vector3 pos = new Vector3(
-            nextSpawnX,
+            spawnX,
             PickLaneY(),
             transform.position.z
         );
 
-        GameObject chunk = Instantiate(
-            entry.prefab,
-            pos,
-            entry.prefab.transform.rotation,
-            transform
-        );
+        if (entry != null && entry.prefab != null)
+        {
+            GameObject chunk = Instantiate(
+                entry.prefab,
+                pos,
+                entry.prefab.transform.rotation,
+                transform
+            );
 
-        activeChunks.Add(chunk);
+            activeChunks.Add(chunk);
+        }
 
-        nextSpawnX += chunkWidth;
+        // ❗ ВСЕГДА двигаем дистанцию
+        nextSpawnDistance += chunkWidth;
     }
 
     BackgroundSpawnEntry PickEntry()
@@ -109,17 +113,24 @@ public class BackgroundLayerSpawner : MonoBehaviour
 
         float lane = spawnLanes[Random.Range(0, spawnLanes.Length)];
 
-        // return lane + Random.Range(-laneRandomOffset, laneRandomOffset);
         return lane;
     }
 
     void Cleanup(float worldDistance)
     {
-        float destroyX = worldDistance - chunkWidth * 2f;
+        float destroyDistance = worldDistance - chunkWidth * 2f;
 
         for (int i = activeChunks.Count - 1; i >= 0; i--)
         {
-            if (activeChunks[i].transform.position.x < destroyX)
+            if (activeChunks[i] == null)
+            {
+                activeChunks.RemoveAt(i);
+                continue;
+            }
+
+            float chunkDistance = activeChunks[i].transform.position.x;
+
+            if (chunkDistance < destroyDistance)
             {
                 Destroy(activeChunks[i]);
                 activeChunks.RemoveAt(i);

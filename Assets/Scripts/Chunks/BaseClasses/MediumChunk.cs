@@ -1,6 +1,16 @@
+using System.Collections.Generic;
+
 public class MediumChunk : WorldChunkBase
 {
-    protected override float ChunkWidth
+    public override List<float> Lanes
+    {
+        get
+        {
+            return new(new float[] { -6f, -2f, 2f, 6f });
+        }
+    }
+
+    public override float ChunkWidth
     {
         get
         {

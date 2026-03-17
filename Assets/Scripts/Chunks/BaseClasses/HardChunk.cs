@@ -1,6 +1,6 @@
 public class HardChunk : WorldChunkBase
 {
-    protected override float ChunkWidth
+    public override float ChunkWidth
     {
         get
         {

@@ -2,11 +2,40 @@ using UnityEngine;
 
 public class AsteroidIdleRotation : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 10f;
-    [SerializeField] private Vector3 rotationAxis = new Vector3(0.2f, 0.7f, 0.4f);
+    [Header("Speed")]
+    [SerializeField] private float minSpeed = 5f;
+    [SerializeField] private float maxSpeed = 20f;
+
+    private Vector3 rotationAxis;
+    private float rotationSpeed;
+
+    void Awake()
+    {
+        // случайная ось (нормализуем чтобы скорость не ломалась)
+        rotationAxis = Random.onUnitSphere;
+
+        // случайная скорость
+        rotationSpeed = Random.Range(minSpeed, maxSpeed);
+
+        // случайное направление (влево / вправо)
+        if (Random.value > 0.5f)
+            rotationSpeed *= -1f;
+    }
 
     void Update()
     {
-        transform.Rotate(rotationSpeed * Time.deltaTime * rotationAxis);
+        transform.Rotate(rotationAxis, rotationSpeed * Time.deltaTime, Space.Self);
     }
+    // void Update()
+    // {
+    //     Vector3 wobble = new Vector3(
+    //         Mathf.Sin(Time.time * 0.7f),
+    //         Mathf.Sin(Time.time * 0.9f),
+    //         Mathf.Sin(Time.time * 0.6f)
+    //     ) * 0.1f;
+
+    //     Vector3 finalAxis = (rotationAxis + wobble).normalized;
+
+    //     transform.Rotate(finalAxis, rotationSpeed * Time.deltaTime, Space.Self);
+    // }
 }

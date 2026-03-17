@@ -35,7 +35,7 @@ public class BiomeManager : MonoBehaviour
 
     void Update()
     {
-        UpdateBiome();
+        // UpdateBiome();
     }
 
     void UpdateBiome(bool force = false)

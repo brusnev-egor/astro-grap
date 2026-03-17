@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5573041429408042480}
-  - component: {fileID: 771520188967648401}
+  - component: {fileID: -1757374894619691977}
+  - component: {fileID: 62362815462158626}
   m_Layer: 0
-  m_Name: Chunk_Easy_Dock
+  m_Name: Ch_E_Dock_Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +34,7 @@ Transform:
   - {fileID: 3395227070071109643}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &771520188967648401
+--- !u!114 &-1757374894619691977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,15 +43,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5558849954797771919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5ec7336db18f4e0ab1de5c7ef12e387, type: 3}
+  m_Script: {fileID: 11500000, guid: cbd856b89ab3440998f12f3307205bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lanes:
-  - -4
-  - 0
-  - 4
-  dockPrefab: {fileID: 4806062500819795815, guid: ff8da6b88d0254754aaf9f2acc8bd68d, type: 3}
-  spawnPoint: {fileID: 3395227070071109643}
+--- !u!114 &62362815462158626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5558849954797771919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bacc7bd530334b2e8f751d8e5ebde16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dockPrefabs:
+  - {fileID: 4806062500819795815, guid: ff8da6b88d0254754aaf9f2acc8bd68d, type: 3}
+  _obstaclePrefabs:
+  - {fileID: 3386729568220048889, guid: 730a2bc7f09dd4f619da28b3569612a7, type: 3}
 --- !u!1 &8938922958359318123
 GameObject:
   m_ObjectHideFlags: 0

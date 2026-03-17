@@ -1,12 +1,10 @@
 using UnityEngine;
 
+// TODO: replace with EasyChunk_Dock_Obstacle
 public class EasyChunk_Dock : EasyChunk
 {
     [Header("Dock")]
     [SerializeField] private GameObject dockPrefab;
-
-    [Header("Spawn")]
-    [SerializeField] private Transform spawnPoint;
 
     public override void Initialize(ChunkContext context)
     {
@@ -17,26 +15,19 @@ public class EasyChunk_Dock : EasyChunk
 
     void SpawnDock()
     {
-        Debug.Log("Spawn dock");
         if (dockPrefab == null)
         {
             Debug.LogError("Dock prefab not assigned");
             return;
         }
 
-        if (spawnPoint == null)
-        {
-            Debug.LogError("Spawn point not assigned");
-            return;
-        }
-
-        int laneIndex = Random.Range(0, lanes.Length);
-        float laneY = lanes[laneIndex];
+        int laneIndex = Random.Range(0, Lanes.Count);
+        float laneY = Lanes[laneIndex];
 
         Vector3 pos = new Vector3(
             transform.position.x + ChunkWidth / 2,
             laneY,
-            spawnPoint.position.z
+            transform.position.z
         );
 
         Instantiate(dockPrefab, pos, Quaternion.identity, transform);

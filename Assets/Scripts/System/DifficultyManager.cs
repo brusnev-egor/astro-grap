@@ -11,12 +11,18 @@ public class DifficultyManager : MonoBehaviour
 {
     public static DifficultyManager Instance { get; private set; }
 
-    [Header("Distance Scaling")]
-    [SerializeField] private float maxDistanceForDifficulty = 3000f;
+    [Header("Difficulty thresholds")]
+    [SerializeField] private float mediumDistance = 250f;
+    [SerializeField] private float hardDistance = 500f;
+
+    [Header("Difficulty FOV")]
+    [SerializeField] private float mediumFov = 42;
+    [SerializeField] private float hardFov = 48;
 
     [Header("Speed")]
     [SerializeField] private float baseSpeed = 8f;
     [SerializeField] private float maxSpeed = 18f;
+    [SerializeField] private float speedIncreaseDistance = 2000f;
     [SerializeField] private AnimationCurve speedCurve;
 
     [Header("Turbo")]
@@ -24,11 +30,13 @@ public class DifficultyManager : MonoBehaviour
     [SerializeField] private float turboDuration = 3f;
 
     private float turboTimer;
-    private float turboMultiplier = 0f;
+    private float turboMultiplier;
 
+    // TODO: remove with ChunkSpawner_Legacy
     public float Difficulty01 { get; private set; }
+
     public float CurrentSpeed { get; private set; }
-    public DifficultyLevel CurrentDifficulty;
+    public DifficultyLevel CurrentDifficulty { get; private set; }
 
     void Awake()
     {
@@ -39,24 +47,35 @@ public class DifficultyManager : MonoBehaviour
     {
         float distance = DistanceTracker.Instance.TotalDistance;
 
-        Difficulty01 = Mathf.Clamp01(distance / maxDistanceForDifficulty);
-
-        UpdateSpeed();
-        UpdateRisk();
+        UpdateDifficulty(distance);
+        UpdateSpeed(distance);
         UpdateTurbo();
     }
 
-    void UpdateSpeed()
+    void UpdateDifficulty(float distance)
     {
-        float t = speedCurve.Evaluate(Difficulty01);
-        float baseSpeedNow = Mathf.Lerp(baseSpeed, maxSpeed, t);
-
-        CurrentSpeed = baseSpeedNow + turboMultiplier * turboSpeedBonus;
+        if (distance >= hardDistance)
+        {
+            CurrentDifficulty = DifficultyLevel.Hard;
+        }
+        else if (distance >= mediumDistance)
+        {
+            CameraFovController.Instance.ExpandFov(mediumFov);
+            CurrentDifficulty = DifficultyLevel.Medium;
+        }
+        else
+            CurrentDifficulty = DifficultyLevel.Easy;
     }
 
-    void UpdateRisk()
+    void UpdateSpeed(float distance)
     {
-        // RiskyMultiplier = riskyChanceCurve.Evaluate(Difficulty01);
+        float t = Mathf.Clamp01(distance / speedIncreaseDistance);
+
+        float curve = speedCurve.Evaluate(t);
+
+        float baseSpeedNow = Mathf.Lerp(baseSpeed, maxSpeed, curve);
+
+        CurrentSpeed = baseSpeedNow + turboMultiplier * turboSpeedBonus;
     }
 
     void UpdateTurbo()
@@ -73,15 +92,15 @@ public class DifficultyManager : MonoBehaviour
         }
     }
 
-    // void OnGUI()
-    // {
-    //     GUIStyle headStyle = new GUIStyle();
-    //     headStyle.fontSize = 48;
-    //     headStyle.normal.textColor = Color.white;
-    //     GUILayout.Label("Distance: " + DistanceTracker.Instance.TotalDistance.ToString("F0"), headStyle);
-    //     GUILayout.Label("Difficulty: " + Difficulty01.ToString("F2"), headStyle);
-    //     GUILayout.Label("Speed: " + CurrentSpeed.ToString("F2"), headStyle);
-    // }
+    void OnGUI()
+    {
+        GUIStyle headStyle = new GUIStyle();
+        headStyle.fontSize = 48;
+        headStyle.normal.textColor = Color.white;
+        GUILayout.Label("Distance: " + DistanceTracker.Instance.TotalDistance.ToString("F0"), headStyle);
+        GUILayout.Label("Difficulty: " + CurrentDifficulty, headStyle);
+        GUILayout.Label("Speed: " + CurrentSpeed.ToString("F2"), headStyle);
+    }
 
     public void ActivateTurbo()
     {

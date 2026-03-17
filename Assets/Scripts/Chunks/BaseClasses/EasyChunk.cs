@@ -1,10 +1,16 @@
-using UnityEngine;
+using System.Collections.Generic;
 
 public class EasyChunk : WorldChunkBase
 {
-    [Header("Lanes")]
-    [SerializeField] protected float[] lanes = new float[] { -4f, 0f, 4f };
-    protected override float ChunkWidth
+    public override List<float> Lanes
+    {
+        get
+        {
+            return new(new float[] { 4f, 0f, -4f });
+        }
+    }
+
+    public override float ChunkWidth
     {
         get
         {
