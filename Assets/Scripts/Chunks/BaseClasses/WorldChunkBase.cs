@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk, IConfigurableChunk
 {
-    // [HideInInspector] public List<float> lanes;
     protected ChunkContext context;
     protected bool isActive;
     private IChunkComponent[] lifecycleComponents;

@@ -3,75 +3,114 @@ using System.Collections.Generic;
 
 public class BackgroundLayerSpawner : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private Transform worldTransform;
+    [Header("Camera")]
+    [SerializeField] private Camera cam;
 
     [Header("Spawn Entries")]
     [SerializeField] private BackgroundSpawnEntry[] entries;
 
     [Header("Settings")]
     [SerializeField] private float chunkWidth = 100f;
-    [SerializeField] private int chunksAhead = 3;
+    [SerializeField] private int chunksOnScreen = 3;
 
     [Header("Lanes")]
     [SerializeField] private float[] spawnLanes;
-    [SerializeField] private float laneRandomOffset = 5f;
 
     private List<GameObject> activeChunks = new();
 
-    // 👉 теперь это "дистанция", а не world position
-    private float nextSpawnDistance;
-
     void Start()
     {
-        nextSpawnDistance = 0f;
+        float camX = cam.transform.position.x;
 
-        for (int i = 0; i < chunksAhead; i++)
+        // ❗ стартуем с центра камеры
+        float startX = camX - chunkWidth;
+
+        for (int i = 0; i < chunksOnScreen; i++)
         {
-            SpawnChunk();
+            SpawnAt(startX + i * chunkWidth);
         }
     }
 
     void Update()
     {
-        float worldDistance = -worldTransform.position.x;
+        float camX = cam.transform.position.x;
 
-        // ✅ правильный spawn loop (без дыр)
-        while (worldDistance + chunksAhead * chunkWidth > nextSpawnDistance)
+        float camLeft = camX - GetHalfWidth();
+        float camRight = camX + GetHalfWidth();
+
+        // 👉 СПАВН СПРАВА
+        while (GetRightmostX() < camRight + chunkWidth)
         {
-            SpawnChunk();
+            SpawnAt(GetRightmostX() + chunkWidth);
         }
 
-        Cleanup(worldDistance);
+        // 👉 УДАЛЕНИЕ СЛЕВА
+        for (int i = activeChunks.Count - 1; i >= 0; i--)
+        {
+            float chunkRight = activeChunks[i].transform.position.x + chunkWidth / 2f;
+
+            if (chunkRight < camLeft - chunkWidth)
+            {
+                Destroy(activeChunks[i]);
+                activeChunks.RemoveAt(i);
+            }
+        }
     }
 
-    void SpawnChunk()
+    // =========================
+    // SPAWN
+    // =========================
+
+    void SpawnAt(float x)
     {
         BackgroundSpawnEntry entry = PickEntry();
 
-        float spawnX = nextSpawnDistance;
+        if (entry == null || entry.prefab == null)
+            return;
 
         Vector3 pos = new Vector3(
-            spawnX,
+            x,
             PickLaneY(),
             transform.position.z
         );
 
-        if (entry != null && entry.prefab != null)
-        {
-            GameObject chunk = Instantiate(
-                entry.prefab,
-                pos,
-                entry.prefab.transform.rotation,
-                transform
-            );
+        GameObject chunk = Instantiate(
+            entry.prefab,
+            pos,
+            entry.prefab.transform.rotation,
+            transform
+        );
 
-            activeChunks.Add(chunk);
+        activeChunks.Add(chunk);
+    }
+
+    float GetRightmostX()
+    {
+        if (activeChunks.Count == 0)
+            return cam.transform.position.x;
+
+        float max = float.MinValue;
+
+        foreach (var c in activeChunks)
+        {
+            if (c == null) continue;
+            if (c.transform.position.x > max)
+                max = c.transform.position.x;
         }
 
-        // ❗ ВСЕГДА двигаем дистанцию
-        nextSpawnDistance += chunkWidth;
+        return max;
     }
+
+    float GetHalfWidth()
+    {
+        float height = cam.orthographicSize;
+        float width = height * cam.aspect;
+        return width;
+    }
+
+    // =========================
+    // PICK
+    // =========================
 
     BackgroundSpawnEntry PickEntry()
     {
@@ -111,30 +150,6 @@ public class BackgroundLayerSpawner : MonoBehaviour
         if (spawnLanes == null || spawnLanes.Length == 0)
             return transform.position.y;
 
-        float lane = spawnLanes[Random.Range(0, spawnLanes.Length)];
-
-        return lane;
-    }
-
-    void Cleanup(float worldDistance)
-    {
-        float destroyDistance = worldDistance - chunkWidth * 2f;
-
-        for (int i = activeChunks.Count - 1; i >= 0; i--)
-        {
-            if (activeChunks[i] == null)
-            {
-                activeChunks.RemoveAt(i);
-                continue;
-            }
-
-            float chunkDistance = activeChunks[i].transform.position.x;
-
-            if (chunkDistance < destroyDistance)
-            {
-                Destroy(activeChunks[i]);
-                activeChunks.RemoveAt(i);
-            }
-        }
+        return spawnLanes[Random.Range(0, spawnLanes.Length)];
     }
 }

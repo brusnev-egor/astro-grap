@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sit_M_Empty
   m_EditorClassIdentifier: 
   chunks:
-  - prefab: {fileID: 5558849954797771919, guid: b9535dcb22a914ef7995ea049a666354, type: 3}
+  - prefab: {fileID: 5558849954797771919, guid: c3dadc1260a234c55845381a059b9103, type: 3}
     parameters:
       random: 0
       dockCount: 0

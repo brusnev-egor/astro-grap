@@ -17,6 +17,8 @@ public class SituationSpawner : MonoBehaviour
     private float nextChunkX;
     private float chunkLength;
 
+    private float visibilityPadding = 10f;
+
     void Update()
     {
         chunkLength = GetChunkLength();
@@ -90,12 +92,14 @@ public class SituationSpawner : MonoBehaviour
             if (entry.behaviour == null)
                 continue;
 
-            float chunkLeft = entry.behaviour.transform.position.x;
-            float chunkRight = chunkLeft + chunkLength;
+            float half = chunkLength * 0.5f;
+
+            float chunkLeft = entry.behaviour.transform.position.x - half;
+            float chunkRight = entry.behaviour.transform.position.x + half;
 
             bool nowInView =
-                chunkRight > camLeft &&
-                chunkLeft < camRight;
+                chunkRight > camLeft - visibilityPadding &&
+                chunkLeft < camRight + visibilityPadding;
 
             if (nowInView && !entry.isInView)
             {

@@ -195,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 38051478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 20, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -213,13 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805d82f86bc294e419779bdc113ee08c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldTransform: {fileID: 431000333}
+  cam: {fileID: 330585545}
   entries:
   - {fileID: 11400000, guid: 1bbad5969fff94718988d2310824db03, type: 2}
   chunkWidth: 100
-  chunksAhead: 3
+  chunksOnScreen: 3
   spawnLanes: []
-  laneRandomOffset: 5
 --- !u!1 &59511289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,13 +2079,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805d82f86bc294e419779bdc113ee08c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldTransform: {fileID: 431000333}
+  cam: {fileID: 330585545}
   entries:
   - {fileID: 11400000, guid: 4de8df34350d347f1a9e7adfcbb4418b, type: 2}
   chunkWidth: 1000
-  chunksAhead: 2
+  chunksOnScreen: 3
   spawnLanes: []
-  laneRandomOffset: 5
 --- !u!1 &863928775
 GameObject:
   m_ObjectHideFlags: 0
