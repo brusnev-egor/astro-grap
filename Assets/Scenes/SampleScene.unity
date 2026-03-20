@@ -3342,6 +3342,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 712ee87e3bfeb4674a0cf76d03cd013d, type: 2}
   - {fileID: 11400000, guid: 6c580627411cc47bfa518473b4d89bb8, type: 2}
   - {fileID: 11400000, guid: 7e2464f34f39c477683695d229e8019b, type: 2}
+  - {fileID: 11400000, guid: 11d62f754ad974f63b331bb8510baded, type: 2}
+  - {fileID: 11400000, guid: 06306299341254a6e8f7b258a0401c6c, type: 2}
+  - {fileID: 11400000, guid: 30cb5428898384bc4ac8cbdbe93e30b2, type: 2}
+  - {fileID: 11400000, guid: b6f11a4a942424f66be70a2f521e5a3d, type: 2}
+  - {fileID: 11400000, guid: 6a38ea5ebbca2494084baabb4f324b61, type: 2}
+  - {fileID: 11400000, guid: 9e25679c7874544a081c4dfb6593f9eb, type: 2}
   hardSituations: []
 --- !u!4 &1667986602 stripped
 Transform:
@@ -3752,7 +3758,7 @@ MonoBehaviour:
   mediumFov: 42
   hardFov: 48
   baseSpeed: 8
-  maxSpeed: 18
+  maxSpeed: 20
   speedIncreaseDistance: 2000
   speedCurve:
     serializedVersion: 2

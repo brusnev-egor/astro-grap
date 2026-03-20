@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0fc70ce492b14b40b294a3bc13584a0, type: 3}
-  m_Name: Sit_M_2D_1MO_F
+  m_Name: Sit_M_2D_1MO_Front
   m_EditorClassIdentifier: 
   chunks:
   - prefab: {fileID: 841358265237872409, guid: 52efdce8d220844d4b5d84c7900c24ce, type: 3}

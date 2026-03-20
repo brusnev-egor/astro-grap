@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0fc70ce492b14b40b294a3bc13584a0, type: 3}
-  m_Name: Sit_M_2D_1MO_B
+  m_Name: Sit_M_Shield_Bait_T
   m_EditorClassIdentifier: 
   chunks:
-  - prefab: {fileID: 841358265237872409, guid: b26f204e29eb14a16b982261036dd478, type: 3}
+  - prefab: {fileID: 5558849954797771919, guid: 882bacd43eb29416c801879029eb695c, type: 3}
     parameters:
-      random: 1
-      dockCount: 2
+      random: 0
+      dockCount: 0
       obstacleCount: 0
       dockLanes: 
       obstacleLanes: 
