@@ -47,8 +47,8 @@ public class SituationDirector : MonoBehaviour
             _ => easySituations
         };
 
-        // return PickWeighted(pool);
-        return PickWeighted(mediumSituations);
+        return PickWeighted(pool);
+        // return PickWeighted(hardSituations);
     }
 
     SituationDefinition PickWeighted(SituationDefinition[] defs)

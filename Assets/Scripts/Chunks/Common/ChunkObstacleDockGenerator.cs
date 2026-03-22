@@ -17,11 +17,6 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
     void Awake()
     {
         _worldChunk = GetComponent<WorldChunkBase>();
-        Debug.Log("Awake width = " + _worldChunk.ChunkWidth + " lanes = " + _worldChunk.Lanes.Count);
-        foreach (float lane in _worldChunk.Lanes)
-        {
-            Debug.Log("Awake lane = " + lane);
-        }
         _lanes = _worldChunk.Lanes;
         _chunkWidth = _worldChunk.ChunkWidth;
         if (_xSlot == 0)
@@ -63,11 +58,15 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
 
     private void SpawnObjectsRandom(GameObject[] prefabs, int count)
     {
-        if (prefabs.Length == 0)
+        if (count == 0)
         {
-            Debug.LogError("Prefab not assigned");
             return;
         }
+        if (prefabs.Length == 0)
+            {
+                Debug.LogError("Prefab not assigned");
+                return;
+            }
 
         do
         {

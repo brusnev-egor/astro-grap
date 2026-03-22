@@ -68,11 +68,10 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk, IConfigurable
         foreach (float lane in Lanes)
             Gizmos.DrawLine(new Vector3(transform.position.x, lane, transform.position.z), new Vector3(transform.position.x + ChunkWidth, lane, transform.position.z));
     }
-
+#endif
     public void Apply(ChunkParams parameters)
     {
         foreach (var c in lifecycleComponents)
             c.OnSetParams(parameters);
     }
-#endif
 }

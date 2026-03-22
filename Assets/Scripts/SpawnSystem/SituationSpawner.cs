@@ -141,7 +141,8 @@ public class SituationSpawner : MonoBehaviour
 
     private float GetChunkLength()
     {
-        switch(DifficultyManager.Instance.CurrentDifficulty)
+        // return ChunkSizeConfigGetter.MediumChunkLength;
+        switch (DifficultyManager.Instance.CurrentDifficulty)
         {
             case DifficultyLevel.Medium:
                 return ChunkSizeConfigGetter.MediumChunkLength;

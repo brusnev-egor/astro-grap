@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   easyChunkLength: 25
   mediumChunkLength: 20
-  hardChunkLength: 10
+  hardChunkLength: 20

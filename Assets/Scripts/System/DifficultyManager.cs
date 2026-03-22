@@ -17,7 +17,7 @@ public class DifficultyManager : MonoBehaviour
 
     [Header("Difficulty FOV")]
     [SerializeField] private float mediumFov = 42;
-    [SerializeField] private float hardFov = 48;
+    [SerializeField] private float hardFov = 50;
 
     [Header("Speed")]
     [SerializeField] private float baseSpeed = 8f;
@@ -56,6 +56,7 @@ public class DifficultyManager : MonoBehaviour
     {
         if (distance >= hardDistance)
         {
+            CameraFovController.Instance.ExpandFov(hardFov);
             CurrentDifficulty = DifficultyLevel.Hard;
         }
         else if (distance >= mediumDistance)
