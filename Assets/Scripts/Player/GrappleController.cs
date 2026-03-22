@@ -8,8 +8,7 @@ public class GrappleController : MonoBehaviour
         Idle,
         RopeFlying,
         Pulling,
-        Returning,
-        Cooldown
+        Returning
     }
 
     [Header("References")]
@@ -44,11 +43,11 @@ public class GrappleController : MonoBehaviour
     [SerializeField] private float dangerousRopeLength = 20f;
     [SerializeField] private float breakDelay = 0.25f;
 
-    [Header("Cooldown")]
-    [SerializeField] private float cooldownTime = 0.15f;
-
     [Header("Perfect Dock")]
     [SerializeField] private float perfectAngleThreshold = 20f;
+
+    [Header("Input")]
+    [SerializeField] private float inputBufferTime = 0.2f;
 
     private Rigidbody2D rb;
     private Camera cam;
@@ -68,6 +67,11 @@ public class GrappleController : MonoBehaviour
     private float lastAngleAtDock;
     private float anglePullMultiplier;
 
+    private bool bufferedInput;
+    private float bufferTimer;
+
+    private Transform lastDockedTarget;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -76,12 +80,14 @@ public class GrappleController : MonoBehaviour
 
     void Update()
     {
-        if (state == State.Idle)
-            HandleInput();
+        HandleInput();
+        UpdateBuffer();
     }
 
     void FixedUpdate()
     {
+        TryConsumeBufferedInput();
+
         switch (state)
         {
             case State.RopeFlying:
@@ -100,11 +106,6 @@ public class GrappleController : MonoBehaviour
             case State.Idle:
                 ReturnToNeutralRotation();
                 break;
-
-            case State.Cooldown:
-                UpdateCooldown();
-                ReturnToNeutralRotation();
-                break;
         }
     }
 
@@ -115,38 +116,36 @@ public class GrappleController : MonoBehaviour
         if (!Input.GetMouseButtonDown(0))
             return;
 
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        Plane plane = new Plane(Vector3.forward, Vector3.zero);
+        bufferedInput = true;
+        bufferTimer = inputBufferTime;
+    }
 
-        if (!plane.Raycast(ray, out float enter))
+    void UpdateBuffer()
+    {
+        if (!bufferedInput)
             return;
 
-        Vector3 hitPoint = ray.GetPoint(enter);
-        Vector2 tapWorld = new Vector2(hitPoint.x, hitPoint.y);
+        bufferTimer -= Time.deltaTime;
 
-        Vector2 dir = tapWorld - (Vector2)playerAnchor.position;
+        if (bufferTimer <= 0f)
+        {
+            bufferedInput = false;
+        }
+    }
 
-        if (dir.x <= 0f)
+    void TryConsumeBufferedInput()
+    {
+        if (!bufferedInput)
             return;
 
-        float rayDistance = dir.magnitude;
-
-        RaycastHit2D hit = Physics2D.Raycast(
-            playerAnchor.position,
-            dir.normalized,
-            rayDistance,
-            dockLayer
-        );
-
-        if (!hit)
+        if (!CanStartGrapple())
             return;
 
-        target = hit.transform;
-        ropeTipPosition = playerAnchor.position;
-        tension01 = 0f;
-        grappleStartY = rb.position.y;
-
-        state = State.RopeFlying;
+        if (TryFindTarget(out Transform foundTarget))
+        {
+            bufferedInput = false;
+            StartGrapple(foundTarget);
+        }
     }
 
     // ================= ROPE =================
@@ -155,10 +154,8 @@ public class GrappleController : MonoBehaviour
     {
         if (target == null)
         {
-            EnterCooldown();
-            return;
+            state = State.Idle;
         }
-
         ropeTipPosition = Vector2.MoveTowards(
             ropeTipPosition,
             target.position,
@@ -169,6 +166,54 @@ public class GrappleController : MonoBehaviour
 
         if (Vector2.Distance(ropeTipPosition, target.position) <= 0.05f)
             StartPull();
+    }
+
+    bool TryFindTarget(out Transform foundTarget)
+    {
+        foundTarget = null;
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        Plane plane = new Plane(Vector3.forward, Vector3.zero);
+
+        if (!plane.Raycast(ray, out float enter))
+            return false;
+
+        Vector3 hitPoint = ray.GetPoint(enter);
+        Vector2 tapWorld = new(hitPoint.x, hitPoint.y);
+
+        Vector2 dir = tapWorld - (Vector2)playerAnchor.position;
+
+        if (dir.x <= 0f)
+            return false;
+
+        float rayDistance = dir.magnitude;
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(
+            playerAnchor.position,
+            dir.normalized,
+            rayDistance,
+            dockLayer
+        );
+
+        foreach (var hit in hits)
+        {
+            if (hit.transform == lastDockedTarget)
+                continue;
+
+            foundTarget = hit.transform;
+            return true;
+        }
+        return false;
+    }
+
+    void StartGrapple(Transform newTarget)
+    {
+        target = newTarget;
+        ropeTipPosition = playerAnchor.position;
+        tension01 = 0f;
+        grappleStartY = rb.position.y;
+
+        state = State.RopeFlying;
     }
 
     // ================= PULL =================
@@ -227,7 +272,6 @@ public class GrappleController : MonoBehaviour
 
         if (distance <= reachThreshold || dot < 0.1f)
         {
-            Debug.Log("OnDocked " + rb.position.y);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.position = new Vector2(rb.position.x, end.y);
 
@@ -237,6 +281,8 @@ public class GrappleController : MonoBehaviour
 
    void OnDocked()
     {
+        lastDockedTarget = target;
+
         bool isPerfect = lastAngleAtDock <= perfectAngleThreshold;
 
         float dockY = target.position.y;
@@ -270,8 +316,8 @@ public class GrappleController : MonoBehaviour
             playerMovement.enabled = true;
 
         rb.simulated = true;
-
-        EnterCooldown();
+        target = null;
+        state = State.Idle;
     }
 
     // ================= ROTATION =================
@@ -374,26 +420,13 @@ public class GrappleController : MonoBehaviour
         returnVelocityY = 0f;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
-        state = State.Cooldown;
-        cooldownTimer = cooldownTime;
-    }
-
-    // ================= COOLDOWN =================
-
-    void EnterCooldown()
-    {
-        state = State.Cooldown;
-        cooldownTimer = cooldownTime;
+        state = State.Idle;
         target = null;
-        tension01 = 0f;
     }
 
-    void UpdateCooldown()
+    bool CanStartGrapple()
     {
-        cooldownTimer -= Time.fixedDeltaTime;
-
-        if (cooldownTimer <= 0f)
-            state = State.Idle;
+        return state == State.Idle;
     }
 
     // ======================
