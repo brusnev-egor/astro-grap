@@ -181,29 +181,52 @@ public class GrappleController : MonoBehaviour
         Vector3 hitPoint = ray.GetPoint(enter);
         Vector2 tapWorld = new(hitPoint.x, hitPoint.y);
 
-        Vector2 dir = tapWorld - (Vector2)playerAnchor.position;
+        Vector2 inputDir = tapWorld - (Vector2)playerAnchor.position;
 
-        if (dir.x <= 0f)
+        if (inputDir.x <= 0f)
             return false;
 
-        float rayDistance = dir.magnitude;
+        float maxAssistRadius = maxDistance;
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
             playerAnchor.position,
-            dir.normalized,
-            rayDistance,
+            maxAssistRadius,
             dockLayer
         );
 
-        foreach (var hit in hits)
+        Transform best = null;
+        float bestScore = -999f;
+
+        foreach (var h in hits)
         {
-            if (hit.transform == lastDockedTarget)
+            Transform t = h.transform;
+
+            if (t == lastDockedTarget)
                 continue;
 
-            foundTarget = hit.transform;
-            return true;
+            Vector2 toTarget = (Vector2)t.position - (Vector2)playerAnchor.position;
+            float distance = toTarget.magnitude;
+
+            Vector2 dir = toTarget.normalized;
+
+            float dot = Vector2.Dot(inputDir.normalized, dir);
+
+            if (dot < 0.5f) // угол допуска
+                continue;
+
+            float distanceScore = 1f - (distance / maxAssistRadius);
+
+            float score = dot * 0.7f + distanceScore * 0.3f;
+
+            if (score > bestScore)
+            {
+                bestScore = score;
+                best = t;
+            }
         }
-        return false;
+
+        foundTarget = best;
+        return best != null;
     }
 
     void StartGrapple(Transform newTarget)
