@@ -53,9 +53,12 @@ public class SituationDirector : MonoBehaviour
 
     SituationDefinition PickWeighted(SituationDefinition[] defs)
     {
-        int totalWeight = defs.Sum(d => d.weight);
+        float totalWeight = defs.Sum(d => d.weight);
 
-        int roll = Random.Range(0, totalWeight);
+        float roll = Random.Range(0, totalWeight);
+
+        if (totalWeight <= 0f)
+            return defs[Random.Range(0, defs.Length)];
 
         foreach (var d in defs)
         {

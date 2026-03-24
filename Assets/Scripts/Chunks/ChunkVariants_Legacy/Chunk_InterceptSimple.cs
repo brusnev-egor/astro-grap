@@ -18,7 +18,7 @@ public class Chunk_InterceptSimple : WorldChunkBase
     public override void OnEnterView()
     {
         base.OnEnterView();
-        DangerIndicatorSystem.Instance.Hide();
+        // DangerIndicatorSystem.Instance.Hide();
         obstacle.Launch();
     }
 }

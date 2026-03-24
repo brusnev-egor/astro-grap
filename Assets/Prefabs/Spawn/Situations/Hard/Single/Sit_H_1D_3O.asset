@@ -20,4 +20,4 @@ MonoBehaviour:
       obstacleCount: 3
       dockLanes: 
       obstacleLanes: 
-  weight: 1
+  weight: 0.7

@@ -3,7 +3,6 @@ using UnityEngine;
 public class DangerIndicatorUI : MonoBehaviour
 {
     [SerializeField] private RectTransform rect;
-    [SerializeField] private Camera worldCamera;
 
     private Transform target;
     private bool active;
@@ -11,6 +10,8 @@ public class DangerIndicatorUI : MonoBehaviour
     public void SetTarget(Transform hazard)
     {
         target = hazard;
+
+        Camera worldCamera = GameManager.Instance.MainCamera;
 
         Vector3 screenPos = worldCamera.WorldToScreenPoint(target.position);
 
@@ -31,11 +32,4 @@ public class DangerIndicatorUI : MonoBehaviour
         active = false;
         gameObject.SetActive(false);
     }
-
-    // void Update()
-    // {
-    //     if (!active || target == null)
-    //         return;
-        
-    // }
 }

@@ -27,5 +27,5 @@ public class SituationDefinition : ScriptableObject
     public ChunkEntry[] chunks;
 
     [Header("Spawn weight")]
-    public int weight = 1;
+    public float weight = 1;
 }

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject explosionPrefab;
 
     [SerializeField] private DistanceTracker distanceTracker;
-    // [SerializeField] private CameraOrthoPunch cameraPunch;
+    public Camera MainCamera;
 
     private bool isGameOver;
 

@@ -102,10 +102,10 @@
     <Compile Include="Assets/Scripts/System/TimeEffects.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkDefinition.cs" />
     <Compile Include="Assets/Scripts/SpawnSystem/Definition/SituationDefinition.cs" />
+    <Compile Include="Assets/Scripts/SituationDirectorTests.test.cs" />
     <Compile Include="Assets/Scripts/Camera/CameraFovController.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundLayerSpawner.cs" />
     <Compile Include="Assets/Scripts/Chunks/Easy/EasyChunk_Dock.cs" />
-    <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_FastIncoming.cs" />
     <Compile Include="Assets/Scripts/Parallax/ParallaxLayer.cs" />
     <Compile Include="Assets/Scripts/Docks/DockPulse.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_InterceptSimple.cs" />
@@ -115,6 +115,7 @@
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/Docks/Dock.cs" />
     <Compile Include="Assets/Scripts/Player/ShipAccelerationTilt.cs" />
+    <Compile Include="Assets/Scripts/Chunks/Common/ChunkIntercept.cs" />
     <Compile Include="Assets/Scripts/Chunks/BaseClasses/HardChunk.cs" />
     <Compile Include="Assets/Scripts/Player/ShipIdleFloat.cs" />
     <Compile Include="Assets/Scripts/Obstacles/MovingObstacle.cs" />

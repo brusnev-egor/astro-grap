@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0fc70ce492b14b40b294a3bc13584a0, type: 3}
-  m_Name: Sit_H_2D_1MO_Front
+  m_Name: Sit_H_1D_1I
   m_EditorClassIdentifier: 
   chunks:
-  - prefab: {fileID: 5558849954797771919, guid: 86c6e8aa0c621499193d91ef0994113d, type: 3}
+  - prefab: {fileID: 5558849954797771919, guid: b89eb9af4ef39405aa3ee4ae73b279d9, type: 3}
     parameters:
       random: 1
-      dockCount: 2
+      dockCount: 1
       obstacleCount: 0
       dockLanes: 
       obstacleLanes: 
-  weight: 0.9
+  weight: 0.3
