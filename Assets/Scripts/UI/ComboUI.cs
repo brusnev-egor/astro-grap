@@ -16,8 +16,8 @@ public class ComboUI : MonoBehaviour
 
     void UpdateCombo(int combo)
     {
-        comboText.text = $"x{combo}";
-        canvasGroup.alpha = 1f;
+        // comboText.text = $"x{combo}";
+        // canvasGroup.alpha = 1f;
 
         // if (combo >= 3)
         // CameraImpulse.Instance.Fire(1.2f);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5573041429408042480}
   - component: {fileID: -3429205270305225305}
   - component: {fileID: -8939678995645161373}
+  - component: {fileID: 3253197065450296208}
   m_Layer: 0
   m_Name: Ch_H_Dock_Obstacle
   m_TagString: Untagged
@@ -62,3 +63,19 @@ MonoBehaviour:
   _obstaclePrefabs:
   - {fileID: 3386729568220048889, guid: 730a2bc7f09dd4f619da28b3569612a7, type: 3}
   _xSlot: 0
+--- !u!114 &3253197065450296208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5558849954797771919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8306d75fac34cb59f43e41b990d137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectiblePrefab: {fileID: 5537605701752161432, guid: acf2e8f7c75e048d2874c6642b9d7206, type: 3}
+  spawnChance: 0.7
+  minCount: 3
+  maxCount: 6

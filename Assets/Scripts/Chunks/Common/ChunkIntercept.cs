@@ -22,6 +22,9 @@ public class ChunkIntercept : MonoBehaviour, IChunkComponent
         _indicator = DangerIndicatorSystem.Instance.Show(_interceptObstacle.transform);
     }
 
+    public void OnChunkObjectsGenerated(ChunkObjectsData data)
+    {}
+
     public void OnSetParams(ChunkParams chunkParams)
     {}
 }

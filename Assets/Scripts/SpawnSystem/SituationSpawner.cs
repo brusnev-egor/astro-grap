@@ -31,7 +31,7 @@ public class SituationSpawner : MonoBehaviour
     {
         float worldDistance = -world.position.x;
 
-        while (nextChunkX < worldDistance + situationsAhead * chunkLength * 4)
+        while (nextChunkX < worldDistance + situationsAhead * chunkLength)
         {
             SpawnSituation();
         }

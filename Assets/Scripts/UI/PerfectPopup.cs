@@ -22,10 +22,10 @@ public class PerfectPopup : MonoBehaviour
 
     public void Show()
     {
-        if (currentRoutine != null)
-            StopCoroutine(currentRoutine);
+        // if (currentRoutine != null)
+        //     StopCoroutine(currentRoutine);
 
-        currentRoutine = StartCoroutine(ShowRoutine());
+        // currentRoutine = StartCoroutine(ShowRoutine());
     }
 
     IEnumerator ShowRoutine()

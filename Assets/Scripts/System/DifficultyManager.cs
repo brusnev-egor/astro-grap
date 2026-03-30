@@ -93,15 +93,15 @@ public class DifficultyManager : MonoBehaviour
         }
     }
 
-    void OnGUI()
-    {
-        GUIStyle headStyle = new GUIStyle();
-        headStyle.fontSize = 48;
-        headStyle.normal.textColor = Color.white;
-        GUILayout.Label("Distance: " + DistanceTracker.Instance.TotalDistance.ToString("F0"), headStyle);
-        GUILayout.Label("Difficulty: " + CurrentDifficulty, headStyle);
-        GUILayout.Label("Speed: " + CurrentSpeed.ToString("F2"), headStyle);
-    }
+    // void OnGUI()
+    // {
+    //     GUIStyle headStyle = new GUIStyle();
+    //     headStyle.fontSize = 48;
+    //     headStyle.normal.textColor = Color.white;
+    //     GUILayout.Label("Distance: " + DistanceTracker.Instance.TotalDistance.ToString("F0"), headStyle);
+    //     GUILayout.Label("Difficulty: " + CurrentDifficulty, headStyle);
+    //     GUILayout.Label("Speed: " + CurrentSpeed.ToString("F2"), headStyle);
+    // }
 
     public void ActivateTurbo()
     {

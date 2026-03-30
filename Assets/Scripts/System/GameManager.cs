@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         UpdateSpeed();
-        PlayerY = playerObject.transform.position.y;
+        if (playerObject)
+        {
+            PlayerY = playerObject.transform.position.y;
+        }
     }
 
     void UpdateSpeed()

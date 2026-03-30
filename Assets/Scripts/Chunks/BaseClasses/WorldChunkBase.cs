@@ -58,7 +58,6 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk, IConfigurable
 #if UNITY_EDITOR
     void OnDrawGizmos()
     {
-        Debug.Log("Draw gizmo");
         Gizmos.color = Color.cyan;
         float height = Lanes.Count > 0 ? Math.Abs(Lanes[0]) * 2 + 2 : 8f; // + offset
         Gizmos.DrawWireCube(

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public interface IWorldChunk
@@ -18,12 +19,21 @@ public interface IWorldChunk
     void OnExitView();
 }
 
+public class ChunkObjectsData
+{
+    public List<Transform> docks = new();
+    public List<Transform> obstacles = new();
+
+    public List<float> occupiedLanes = new();
+}
+
 public interface IChunkComponent
 {
     void OnChunkInitialize(WorldChunkBase chunk, ChunkContext context);
     void OnChunkEnterView();
     void OnChunkExitView();
     void OnSetParams(ChunkParams chunkParams);
+    void OnChunkObjectsGenerated(ChunkObjectsData data);
 }
 
 public interface IConfigurableChunk

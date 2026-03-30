@@ -13,7 +13,7 @@ public class WorldShifter : MonoBehaviour
 
     void LateUpdate()
     {
-        if (paused)
+        if (paused || !player)
             return;
 
         if (player.position.x > shiftThresholdX)

@@ -11,12 +11,15 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
     private ChunkParams _params;
     private List<float> _lanes;
     private float _chunkWidth;
+    private ChunkObjectsData _generatedData = new();
 
     private WorldChunkBase _worldChunk;
+    private IChunkComponent[] _chunkComponents;
 
     void Awake()
     {
         _worldChunk = GetComponent<WorldChunkBase>();
+        _chunkComponents = GetComponents<IChunkComponent>();
         _lanes = _worldChunk.Lanes;
         _chunkWidth = _worldChunk.ChunkWidth;
         if (_xSlot == 0)
@@ -28,16 +31,26 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
     public void Generate()
     {
         if (_params == null)
-        {
             return;
-        }
+
+        _generatedData = new ChunkObjectsData();
+
         if (_params.random)
-        {
             SpawnRandom();
-        }
         else
-        {
             SpawnSpecific();
+
+        NotifyComponents();
+    }
+
+    private void NotifyComponents()
+    {
+        foreach (var c in _chunkComponents)
+        {
+            if (c == this)
+                continue;
+
+            c.OnChunkObjectsGenerated(_generatedData);
         }
     }
 
@@ -95,12 +108,20 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
 
     private void SpawnObject(GameObject prefab, float laneY)
     {
-        Vector3 dockPos = new(
+        Vector3 pos = new(
             transform.position.x + _xSlot,
             laneY,
             transform.position.z
         );
-        Instantiate(prefab, dockPos, Quaternion.identity, transform);
+
+        GameObject go = Instantiate(prefab, pos, Quaternion.identity, transform);
+
+        if (go.CompareTag("Dock"))
+            _generatedData.docks.Add(go.transform);
+        else
+            _generatedData.obstacles.Add(go.transform);
+
+        _generatedData.occupiedLanes.Add(laneY);
     }
 
     private GameObject PickRandomObject(GameObject[] prefabs)
@@ -127,5 +148,10 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
     public void OnSetParams(ChunkParams chunkParams)
     {
         _params = chunkParams;
+    }
+
+    public void OnChunkObjectsGenerated(ChunkObjectsData data)
+    {
+        throw new System.NotImplementedException();
     }
 }

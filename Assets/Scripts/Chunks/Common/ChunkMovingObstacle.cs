@@ -42,4 +42,7 @@ public class ChunkMovingObstacle : MonoBehaviour, IChunkComponent
     public void OnSetParams(ChunkParams chunkParams)
     {
     }
+
+    public void OnChunkObjectsGenerated(ChunkObjectsData data)
+    {}
 }

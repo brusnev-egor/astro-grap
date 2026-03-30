@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3257791974560999330}
   - component: {fileID: 503079090218497393}
   - component: {fileID: 9171892798044589339}
+  - component: {fileID: -6125911105453378190}
   m_Layer: 0
   m_Name: Ch_M_Dock_Obstacle
   m_TagString: Untagged
@@ -61,3 +62,20 @@ MonoBehaviour:
   - {fileID: 4806062500819795815, guid: ff8da6b88d0254754aaf9f2acc8bd68d, type: 3}
   _obstaclePrefabs:
   - {fileID: 3386729568220048889, guid: 730a2bc7f09dd4f619da28b3569612a7, type: 3}
+  _xSlot: 0
+--- !u!114 &-6125911105453378190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999637947124858685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8306d75fac34cb59f43e41b990d137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectiblePrefab: {fileID: 5537605701752161432, guid: acf2e8f7c75e048d2874c6642b9d7206, type: 3}
+  spawnChance: 0.7
+  minCount: 3
+  maxCount: 6
