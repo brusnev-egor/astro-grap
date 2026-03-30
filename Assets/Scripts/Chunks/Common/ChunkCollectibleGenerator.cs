@@ -86,8 +86,8 @@ public class ChunkCollectibleGenerator : MonoBehaviour, IChunkComponent
     {
         float roll = Random.value;
 
-        if (roll < 0.4f) return SpawnSegment.Left;
-        if (roll < 0.8f) return SpawnSegment.Middle;
+        // if (roll < 0.4f) return SpawnSegment.Left;
+        if (roll < 0.6f) return SpawnSegment.Middle;
 
         return SpawnSegment.Right;
     }

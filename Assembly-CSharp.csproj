@@ -105,7 +105,6 @@
     <Compile Include="Assets/Scripts/System/TimeEffects.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkDefinition.cs" />
     <Compile Include="Assets/Scripts/SpawnSystem/Definition/SituationDefinition.cs" />
-    <Compile Include="Assets/Scripts/SituationDirectorTests.test.cs" />
     <Compile Include="Assets/Scripts/Camera/CameraFovController.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundLayerSpawner.cs" />
     <Compile Include="Assets/Scripts/Chunks/Common/ChunkCollectibleGenerator.cs" />
@@ -121,10 +120,12 @@
     <Compile Include="Assets/Scripts/Player/ShipAccelerationTilt.cs" />
     <Compile Include="Assets/Scripts/Chunks/Common/ChunkIntercept.cs" />
     <Compile Include="Assets/Scripts/Chunks/BaseClasses/HardChunk.cs" />
+    <Compile Include="Assets/Scripts/Parallax/BackgroundCamera.cs" />
     <Compile Include="Assets/Scripts/Player/ShipIdleFloat.cs" />
     <Compile Include="Assets/Scripts/Obstacles/MovingObstacle.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumVerticalShift.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundSpawnEntry.cs" />
+    <Compile Include="Assets/Scripts/Parallax/BackgroundScroller.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundTiling.cs" />
     <Compile Include="Assets/Scripts/System/GameManager.cs" />
     <Compile Include="Assets/Scripts/System/DifficultyManager.cs" />
@@ -627,6 +628,10 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@60ef35ffd3cd/net40/unity-custom/nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@e4e5058206c0/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
@@ -1201,6 +1206,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
       <Private>False</Private>
@@ -1221,6 +1230,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1239,6 +1252,10 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
@@ -1323,6 +1340,10 @@
     </Reference>
     <Reference Include="Unity.Notifications">
       <HintPath>Library/ScriptAssemblies/Unity.Notifications.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">

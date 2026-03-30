@@ -274,7 +274,7 @@ MonoBehaviour:
     - line: '|   iOSManualSigningProvisioningProfileType: 0'
     - line: '|   tvOSManualSigningProvisioningProfileType: 0'
     - line: '|   VisionOSManualSigningProvisioningProfileType: 0'
-    - line: '|   appleEnableAutomaticSigning: 0'
+    - line: '|   appleEnableAutomaticSigning: 1'
     - line: '|   iOSRequireARKit: 0'
     - line: '|   iOSAutomaticallyDetectAndAddCapabilities: 1'
     - line: '|   appleEnableProMotion: 0'

@@ -9,6 +9,10 @@ public class SituationDirector : MonoBehaviour
     [SerializeField] private SituationDefinition[] mediumSituations;
     [SerializeField] private SituationDefinition[] hardSituations;
 
+    [Header("Debug")]
+    [SerializeField] private bool isDebug = false;
+    [SerializeField] private SituationDefinition _testSituation;
+
     private int situationsCount;
     private DifficultyLevel currentDifficulty;
 
@@ -21,10 +25,15 @@ public class SituationDirector : MonoBehaviour
     {
         situationsCount++;
 
-        if (situationsCount == 1)
+        if (isDebug)
         {
-            // return tutorialSituation;
+            return _testSituation;
         }
+
+        if (situationsCount == 1)
+            {
+                // return tutorialSituation;
+            }
         DifficultyLevel difficulty = DifficultyManager.Instance.CurrentDifficulty;
         if (currentDifficulty != difficulty)
         {
