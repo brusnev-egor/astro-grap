@@ -67,8 +67,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("GAME OVER");
 
-        Time.timeScale = 0f;
-        CurrentSpeed = 0f;
+        Pause();
 
         ComboSystem.Instance.ResetCombo();
     }
@@ -102,5 +101,17 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+        CurrentSpeed = 0f;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+        CurrentSpeed = DifficultyManager.Instance.CurrentSpeed;
     }
 }

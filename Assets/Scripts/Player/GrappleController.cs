@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class GrappleController : MonoBehaviour
@@ -114,6 +115,10 @@ public class GrappleController : MonoBehaviour
     void HandleInput()
     {
         if (!Input.GetMouseButtonDown(0))
+            return;
+
+        // Нажатие на UI кнопку
+        if (EventSystem.current.IsPointerOverGameObject())
             return;
 
         bufferedInput = true;
