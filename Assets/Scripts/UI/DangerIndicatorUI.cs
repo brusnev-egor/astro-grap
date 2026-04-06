@@ -11,19 +11,30 @@ public class DangerIndicatorUI : MonoBehaviour
     {
         target = hazard;
 
-        Camera worldCamera = GameManager.Instance.MainCamera;
+        Camera worldCam = GameManager.Instance.MainCamera;
+        Camera uiCam = GameManager.Instance.UICamera; // ВАЖНО!
 
-        Vector3 screenPos = worldCamera.WorldToScreenPoint(target.position);
+        Vector3 screenPos = worldCam.WorldToScreenPoint(target.position);
 
-        // фиксируем X справа
-        float fixedX = transform.position.x;
+        RectTransform canvasRect = rect.root as RectTransform;
 
-        rect.position = new Vector3(
-            fixedX,
-            screenPos.y,
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            canvasRect,
+            screenPos,
+            uiCam, // ← ВОТ КЛЮЧЕВОЙ МОМЕНТ
+            out Vector2 localPoint
+        );
+
+        float rightEdge = canvasRect.rect.width / 2f;
+
+        Debug.Log("Edge " + rightEdge + " : " + canvasRect.rect);
+
+        rect.localPosition = new Vector3(
+            rightEdge - 100,
+            localPoint.y,
             0f
         );
-        active = true;
+
         gameObject.SetActive(true);
     }
 

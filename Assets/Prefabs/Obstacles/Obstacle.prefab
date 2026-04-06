@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2306570934762095039}
   - component: {fileID: 1082144713605682436}
   - component: {fileID: 4351042615902009424}
+  - component: {fileID: 6730937874861359757}
   m_Layer: 6
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -83,6 +84,31 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &6730937874861359757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386729568220048889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4049e7e9db4eb4022b9bdf07d52cb2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidConfigs:
+  - Enabled: 1
+    prefab: {fileID: 919132149155446097, guid: ec33ec866f29946f1a5e62f7a572be59, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 1b2cf2d038b66437bbee0de1f8eba5f2, type: 2}
+    - {fileID: 2100000, guid: e881fa0f7237541a7ab40be3be33dea9, type: 2}
+    - {fileID: 2100000, guid: c11aca67e026b4a2590774efa5214965, type: 2}
+    - {fileID: 2100000, guid: 8da5c5d8bb0c141a8a6aa0b044a29f04, type: 2}
+  - Enabled: 1
+    prefab: {fileID: 919132149155446097, guid: 27c00e9dbe31a40ac8e4866b8bd4d0f0, type: 3}
+    materials:
+    - {fileID: 2100000, guid: 4137ae3e4810443398930b0931bd357d, type: 2}
+  spawnPoint: {fileID: 1745755957205500127}
 --- !u!1 &6871215870625228700
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,10 +223,14 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ec33ec866f29946f1a5e62f7a572be59, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1b2cf2d038b66437bbee0de1f8eba5f2, type: 2}
+      objectReference: {fileID: 2100000, guid: c11aca67e026b4a2590774efa5214965, type: 2}
     - target: {fileID: 919132149155446097, guid: ec33ec866f29946f1a5e62f7a572be59, type: 3}
       propertyPath: m_Name
       value: rock3_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec33ec866f29946f1a5e62f7a572be59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

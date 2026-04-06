@@ -83,12 +83,14 @@ public class PauseController : MonoBehaviour
             _soundMaterial.SetColor("_ColorA", _disabledColor);
             _soundMaterial.SetColor("_ColorB", _disabledColor);
             _soundIcon.color = _disabledIconColor;
+            AudioManager.Instance.MuteSound();
         }
         else
         {
             _soundMaterial.SetColor("_ColorA", _enabledColor);
             _soundMaterial.SetColor("_ColorB", _enabledColor);
             _soundIcon.color = Color.white;
+            AudioManager.Instance.UnmuteSound();
         }
         _soundEnabled = !_soundEnabled;
     }

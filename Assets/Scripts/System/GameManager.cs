@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private DistanceTracker distanceTracker;
     public Camera MainCamera;
+    public Camera UICamera;
+    public event Action OnGameOver;
 
     private bool isGameOver;
 
@@ -63,11 +66,12 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.Play(AudioManager.Instance.hit, 1f);
 
         // уничтожаем игрока
-        Destroy(playerObject);
-
+        // Destroy(playerObject);
+        playerObject.SetActive(false);
         Debug.Log("GAME OVER");
 
         Pause();
+        OnGameOver?.Invoke();
 
         ComboSystem.Instance.ResetCombo();
     }
@@ -84,7 +88,7 @@ public class GameManager : MonoBehaviour
             // CameraImpulse.Instance.Fire(1.2f);
             // cameraPunch.Punch();
             // CameraFovController.Instance.Punch(2.5f);
-            PerfectPopup.Instance.Show();
+            // PerfectPopup.Instance.Show();
             // AudioManager.Instance.Play(perfectSound, 1f);
         }
         else
@@ -113,5 +117,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         CurrentSpeed = DifficultyManager.Instance.CurrentSpeed;
+    }
+
+    public void Revive()
+    {
+        isGameOver = false;
+        playerObject.SetActive(true);
+        Resume();
     }
 }

@@ -124,8 +124,10 @@
     <Compile Include="Assets/Scripts/Parallax/BackgroundCamera.cs" />
     <Compile Include="Assets/Scripts/Player/ShipIdleFloat.cs" />
     <Compile Include="Assets/Scripts/Obstacles/MovingObstacle.cs" />
+    <Compile Include="Assets/Scripts/UI/GameOverUI.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumVerticalShift.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundSpawnEntry.cs" />
+    <Compile Include="Assets/Scripts/Obstacles/RandomObstacle.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundScroller.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundTiling.cs" />
     <Compile Include="Assets/Scripts/System/GameManager.cs" />

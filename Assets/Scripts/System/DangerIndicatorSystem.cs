@@ -19,6 +19,7 @@ public class DangerIndicatorSystem : MonoBehaviour
     {
         DangerIndicatorUI indicator = Instantiate(_indicatorPrefab, _canvas.transform);
         _indicatorObjects.Add(indicator);
+        Debug.Log("Set target" + hazard.position);
         indicator.SetTarget(hazard);
         return indicator;
     }

@@ -25,4 +25,14 @@ public class AudioManager : MonoBehaviour
 
         sfxSource.PlayOneShot(clip, volume);
     }
+
+    public void MuteSound()
+    {
+        sfxSource.enabled = false;
+    }
+
+    public void UnmuteSound()
+    {
+        sfxSource.enabled = true;
+    }
 }
