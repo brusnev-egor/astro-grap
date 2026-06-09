@@ -59,7 +59,7 @@
     <UnityVersion>6000.0.37f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Users/egorbrusnev/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.1/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/egorbrusnev/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.37f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.37f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.37f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -100,7 +100,9 @@
     <Compile Include="Assets/Scripts/System/TurboVisualController.cs" />
     <Compile Include="Assets/Scripts/Parallax/ParallaxTiling.cs" />
     <Compile Include="Assets/Scripts/Collectibles/CurrencyManager.cs" />
+    <Compile Include="Assets/Scripts/System/PlayerPrefsManager.cs" />
     <Compile Include="Assets/Scripts/Camera/CameraOrthoPunch.cs" />
+    <Compile Include="Assets/Scripts/UI/MainMenuIdleItem.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/System/ComboSystem.cs" />
     <Compile Include="Assets/Scripts/System/TimeEffects.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Assets/Scripts/Chunks/Common/ChunkCollectibleGenerator.cs" />
     <Compile Include="Assets/Scripts/Chunks/Easy/EasyChunk_Dock.cs" />
     <Compile Include="Assets/Scripts/Parallax/ParallaxLayer.cs" />
+    <Compile Include="Assets/Scripts/UI/SoundButtonsUI.cs" />
     <Compile Include="Assets/Scripts/Docks/DockPulse.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_InterceptSimple.cs" />
     <Compile Include="Assets/Scripts/Chunks/Common/ChunkMovingObstacle.cs" />
@@ -121,16 +124,19 @@
     <Compile Include="Assets/Scripts/Player/ShipAccelerationTilt.cs" />
     <Compile Include="Assets/Scripts/Chunks/Common/ChunkIntercept.cs" />
     <Compile Include="Assets/Scripts/Chunks/BaseClasses/HardChunk.cs" />
+    <Compile Include="Assets/Scripts/Parallax/PlanetChunk.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundCamera.cs" />
     <Compile Include="Assets/Scripts/Player/ShipIdleFloat.cs" />
     <Compile Include="Assets/Scripts/Obstacles/MovingObstacle.cs" />
     <Compile Include="Assets/Scripts/UI/GameOverUI.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumVerticalShift.cs" />
+    <Compile Include="Assets/Scripts/UI/MainMenuUI.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundSpawnEntry.cs" />
     <Compile Include="Assets/Scripts/Obstacles/RandomObstacle.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundScroller.cs" />
     <Compile Include="Assets/Scripts/Parallax/BackgroundTiling.cs" />
     <Compile Include="Assets/Scripts/System/GameManager.cs" />
+    <Compile Include="Assets/Scripts/UI/SceneLoader.cs" />
     <Compile Include="Assets/Scripts/System/DifficultyManager.cs" />
     <Compile Include="Assets/Scripts/Chunks/ChunkContext.cs" />
     <Compile Include="Assets/Scripts/Camera/ColorComboGrading.cs" />
@@ -152,6 +158,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/Shaders/_Space/Planet/PlanetSurface.hlsl" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />

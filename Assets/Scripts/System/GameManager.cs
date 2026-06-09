@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject playerObject;
     [SerializeField] private GameObject explosionPrefab;
-
     [SerializeField] private DistanceTracker distanceTracker;
+    [SerializeField] private SceneLoader _sceneLoader;
+
     public Camera MainCamera;
     public Camera UICamera;
     public event Action OnGameOver;
+    public bool IsPaused;
 
     private bool isGameOver;
 
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         Time.timeScale = 1f;
+        IsPaused = false;
     }
 
     void Update()
@@ -40,19 +43,8 @@ public class GameManager : MonoBehaviour
         CurrentSpeed = DifficultyManager.Instance.CurrentSpeed;
     }
 
-    public void OnPlayerHitObstacle()
+    private void DestroyPlayer()
     {
-        if (isGameOver)
-            return;
-
-        if (playerObject.TryGetComponent(out PlayerShield playerShield) && playerShield.IsShieldActive())
-        {
-            playerShield.BreakShield();
-            return;
-        }
-
-        isGameOver = true;
-
         Vector3 pos = playerObject.transform.position;
 
         // взрыв
@@ -69,6 +61,22 @@ public class GameManager : MonoBehaviour
         // Destroy(playerObject);
         playerObject.SetActive(false);
         Debug.Log("GAME OVER");
+    }
+
+    public void OnPlayerHitObstacle()
+    {
+        if (isGameOver)
+            return;
+
+        if (playerObject.TryGetComponent(out PlayerShield playerShield) && playerShield.IsShieldActive())
+        {
+            playerShield.BreakShield();
+            return;
+        }
+
+        isGameOver = true;
+
+        DestroyPlayer();
 
         Pause();
         OnGameOver?.Invoke();
@@ -104,19 +112,24 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        _sceneLoader.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Pause()
     {
         Time.timeScale = 0f;
         CurrentSpeed = 0f;
+        AudioManager.Instance.PauseMusic();
+        IsPaused = true;
     }
 
     public void Resume()
     {
         Time.timeScale = 1f;
         CurrentSpeed = DifficultyManager.Instance.CurrentSpeed;
+        AudioManager.Instance.ResumeMusic();
+        IsPaused = false;
     }
 
     public void Revive()
@@ -124,5 +137,13 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         playerObject.SetActive(true);
         Resume();
+    }
+
+    public void Quit()
+    {
+        // SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        DestroyPlayer();
+        _sceneLoader.LoadScene("MainMenu");
     }
 }

@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverUI : MonoBehaviour
@@ -49,6 +50,7 @@ public class GameOverUI : MonoBehaviour
 
     public void Quit()
     {
+        GameManager.Instance.Quit();
         _gameOverMenuUI.SetActive(false);
     }
 
@@ -88,5 +90,8 @@ public class GameOverUI : MonoBehaviour
         GameManager.Instance.Revive();
         _gameOverMenuUI.SetActive(false);
         _blurVolume.weight = 0;
+
+        int cost = GetReviveCost();
+        CurrencyManager.Instance.Add(-cost);
     }
 }

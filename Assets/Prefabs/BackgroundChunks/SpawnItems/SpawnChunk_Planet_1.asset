@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SpawnChunk_Planet_1
   m_EditorClassIdentifier: 
   prefab: {fileID: 373769104612323588, guid: d9d802cdfd46640118c514b2225f7faa, type: 3}
-  spawnChance: 0.2
+  spawnChance: 1
   weight: 1
