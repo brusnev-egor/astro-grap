@@ -1,0 +1,1224 @@
+.DS_Store
+.gitignore
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/query/client-agp/cache-v2
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/query/client-agp/cmakeFiles-v1
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/query/client-agp/codemodel-v2
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/cache-v2-671e02c95d7b7f52b515.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-c06ec416660ac60b3520.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-1304364c3187628fe4cc.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/directory-.-RelWithDebInfo-f5ebdc15457944623624.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/directory-FramePacing-RelWithDebInfo-87e3a8450f19c90fd65e.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/directory-GameActivity-RelWithDebInfo-f368e6d506ea21fe2607.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/index-2026-06-20T20-55-18-0370.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/target-game-RelWithDebInfo-7dd2495b1fe32c598a39.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.cmake/api/v1/reply/target-swappywrapper-RelWithDebInfo-4b536fb510565be11382.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.ninja_deps
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/.ninja_log
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeCache.txt
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeCCompiler.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeCXXCompiler.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeDetermineCompilerABI_C.bin
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeDetermineCompilerABI_CXX.bin
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CompilerIdC/CMakeCCompilerId.c
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CompilerIdC/CMakeCCompilerId.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CompilerIdCXX/CMakeCXXCompilerId.cpp
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CompilerIdCXX/CMakeCXXCompilerId.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/CMakeOutput.log
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/TargetDirectories.txt
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/cmake.check_cache
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/CMakeFiles/rules.ninja
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/FramePacing/cmake_install.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/GameActivity/cmake_install.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/additional_project_files.txt
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/android_gradle_build.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/android_gradle_build_mini.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/build.ninja
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/build_file_index.txt
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/cmake_install.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/compile_commands.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/compile_commands.json.bin
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/configure_fingerprint.bin
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/metadata_generation_command.txt
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/prefab_config.json
+.utmp/RelWithDebInfo/5s4s2mdn/arm64-v8a/symbol_folder_index.txt
+.utmp/RelWithDebInfo/5s4s2mdn/hash_key.txt
+.utmp/RelWithDebInfo/5s4s2mdn/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/game-activity/game-activityConfig.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake
+.utmp/RelWithDebInfo/5s4s2mdn/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake
+.utmp/tools/release/arm64-v8a/compile_commands.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Assets/.DS_Store
+Assets/Adaptive Performance.meta
+Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset
+Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset.meta
+Assets/Adaptive Performance/Provider.meta
+Assets/Adaptive Performance/Provider/Google Android Provider Loader.asset
+Assets/Adaptive Performance/Provider/Google Android Provider Loader.asset.meta
+Assets/Adaptive Performance/Provider/Samsung Android Provider Loader.asset
+Assets/Adaptive Performance/Provider/Samsung Android Provider Loader.asset.meta
+Assets/Adaptive Performance/Settings.meta
+Assets/Adaptive Performance/Settings/Google Android Provider Settings.asset
+Assets/Adaptive Performance/Settings/Google Android Provider Settings.asset.meta
+Assets/Adaptive Performance/Settings/Samsung Android Provider Settings.asset
+Assets/Adaptive Performance/Settings/Samsung Android Provider Settings.asset.meta
+Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset
+Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset.meta
+Assets/Animations.meta
+Assets/Animations/Crossfade_End.anim
+Assets/Animations/Crossfade_End.anim.meta
+Assets/Animations/Crossfade_Start.anim
+Assets/Animations/Crossfade_Start.anim.meta
+Assets/Animations/Image.controller
+Assets/Animations/Image.controller.meta
+Assets/Audio.meta
+Assets/Audio/.DS_Store
+Assets/Audio/background_music_1.mp3
+Assets/Audio/background_music_1.mp3.meta
+Assets/Audio/crash.wav
+Assets/Audio/crash.wav.meta
+Assets/Audio/docked.mp3
+Assets/Audio/docked.mp3.meta
+Assets/Audio/lazer.wav
+Assets/Audio/lazer.wav.meta
+Assets/Audio/lazer2.wav
+Assets/Audio/lazer2.wav.meta
+Assets/Audio/rope break.wav
+Assets/Audio/rope break.wav.meta
+Assets/Biomes.meta
+Assets/Biomes/Biome_DeepBlue.asset
+Assets/Biomes/Biome_DeepBlue.asset.meta
+Assets/Camera.meta
+Assets/Camera/Noise_DefaultShake.asset
+Assets/Camera/Noise_DefaultShake.asset.meta
+Assets/CinemachineLensPalette.asset
+Assets/CinemachineLensPalette.asset.meta
+Assets/Editor.meta
+Assets/Editor/com.unity.mobile.notifications.meta
+Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset
+Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset.meta
+Assets/Fonts.meta
+Assets/Fonts/.DS_Store
+Assets/Fonts/Segoe UI.meta
+Assets/Fonts/Segoe UI/COPYRIGHT.txt
+Assets/Fonts/Segoe UI/COPYRIGHT.txt.meta
+Assets/Fonts/Segoe UI/Segoe UI Bold Italic.ttf
+Assets/Fonts/Segoe UI/Segoe UI Bold Italic.ttf.meta
+Assets/Fonts/Segoe UI/Segoe UI Bold.ttf
+Assets/Fonts/Segoe UI/Segoe UI Bold.ttf.meta
+Assets/Fonts/Segoe UI/Segoe UI Italic.ttf
+Assets/Fonts/Segoe UI/Segoe UI Italic.ttf.meta
+Assets/Fonts/Segoe UI/Segoe UI SDF.asset
+Assets/Fonts/Segoe UI/Segoe UI SDF.asset.meta
+Assets/Fonts/Segoe UI/Segoe UI SDF_Menu_Title.asset
+Assets/Fonts/Segoe UI/Segoe UI SDF_Menu_Title.asset.meta
+Assets/Fonts/Segoe UI/Segoe UI SDF_Menu_Title_2.asset
+Assets/Fonts/Segoe UI/Segoe UI SDF_Menu_Title_2.asset.meta
+Assets/Fonts/Segoe UI/Segoe UI SDF_Title.asset
+Assets/Fonts/Segoe UI/Segoe UI SDF_Title.asset.meta
+Assets/Fonts/Segoe UI/Segoe UI.ttf
+Assets/Fonts/Segoe UI/Segoe UI.ttf.meta
+Assets/InputSystem_Actions.inputactions
+Assets/InputSystem_Actions.inputactions.meta
+Assets/Materials.meta
+Assets/Materials/AnchorTest.mat
+Assets/Materials/AnchorTest.mat.meta
+Assets/Materials/BlueBackground.mat
+Assets/Materials/BlueBackground.mat.meta
+Assets/Materials/EmissionOrange.mat
+Assets/Materials/EmissionOrange.mat.meta
+Assets/Materials/EnergySwirl.mat
+Assets/Materials/EnergySwirl.mat.meta
+Assets/Materials/EngineFlame.mat
+Assets/Materials/EngineFlame.mat.meta
+Assets/Materials/Green.mat
+Assets/Materials/Green.mat.meta
+Assets/Materials/HexShield.mat
+Assets/Materials/HexShield.mat.meta
+Assets/Materials/HoloCyan.mat
+Assets/Materials/HoloCyan.mat.meta
+Assets/Materials/LaserBeam_Red.mat
+Assets/Materials/LaserBeam_Red.mat.meta
+Assets/Materials/Red.mat
+Assets/Materials/Red.mat.meta
+Assets/Materials/Rope.mat
+Assets/Materials/Rope.mat.meta
+Assets/Materials/SpaceMaterial.mat
+Assets/Materials/SpaceMaterial.mat.meta
+Assets/Materials/SpaceMaterial_2.mat
+Assets/Materials/SpaceMaterial_2.mat.meta
+Assets/Materials/TestEmission.mat
+Assets/Materials/TestEmission.mat.meta
+Assets/Materials/TestShaderMaterial.mat
+Assets/Materials/TestShaderMaterial.mat.meta
+Assets/Materials/_3dmodels.meta
+Assets/Materials/_Collectibles.meta
+Assets/Materials/_Collectibles/Collectible1.mat
+Assets/Materials/_Collectibles/Collectible1.mat.meta
+Assets/Materials/_Explosion.meta
+Assets/Materials/_Explosion/M_ExplosionFlash.mat
+Assets/Materials/_Explosion/M_ExplosionFlash.mat.meta
+Assets/Materials/_Explosion/M_RadialStreaks.mat
+Assets/Materials/_Explosion/M_RadialStreaks.mat.meta
+Assets/Materials/_Explosion/M_ShockwaveRing.mat
+Assets/Materials/_Explosion/M_ShockwaveRing.mat.meta
+Assets/Materials/_Explosion/M_Sparks.mat
+Assets/Materials/_Explosion/M_Sparks.mat.meta
+Assets/Materials/_Obstacles.meta
+Assets/Materials/_Obstacles/SolarPanel.mat
+Assets/Materials/_Obstacles/SolarPanel.mat.meta
+Assets/Materials/_Obstacles/_asteroids.meta
+Assets/Materials/_Obstacles/_asteroids/AsteroidTrail.mat
+Assets/Materials/_Obstacles/_asteroids/AsteroidTrail.mat.meta
+Assets/Materials/_Obstacles/_asteroids/BlueAsteroid.mat
+Assets/Materials/_Obstacles/_asteroids/BlueAsteroid.mat.meta
+Assets/Materials/_Obstacles/_asteroids/BrownAsteroid.mat
+Assets/Materials/_Obstacles/_asteroids/BrownAsteroid.mat.meta
+Assets/Materials/_Obstacles/_asteroids/FireAsteroid.mat
+Assets/Materials/_Obstacles/_asteroids/FireAsteroid.mat.meta
+Assets/Materials/_Obstacles/_asteroids/GrayYellowAsteroid.mat
+Assets/Materials/_Obstacles/_asteroids/GrayYellowAsteroid.mat.meta
+Assets/Materials/_Obstacles/_asteroids/PurpleAsteroid.mat
+Assets/Materials/_Obstacles/_asteroids/PurpleAsteroid.mat.meta
+Assets/Materials/_Space.meta
+Assets/Materials/_Space/Nebula.meta
+Assets/Materials/_Space/Nebula/Nebula_New.mat
+Assets/Materials/_Space/Nebula/Nebula_New.mat.meta
+Assets/Materials/_Space/Nebula/Nebula_New2.mat
+Assets/Materials/_Space/Nebula/Nebula_New2.mat.meta
+Assets/Materials/_Space/Nebula_old.meta
+Assets/Materials/_Space/Nebula_old/Nebula.mat
+Assets/Materials/_Space/Nebula_old/Nebula.mat.meta
+Assets/Materials/_Space/Nebula_old/Nebula_Far.mat
+Assets/Materials/_Space/Nebula_old/Nebula_Far.mat.meta
+Assets/Materials/_Space/Nebula_old/Nebula_Mid.mat
+Assets/Materials/_Space/Nebula_old/Nebula_Mid.mat.meta
+Assets/Materials/_Space/Nebula_old/Nebula_Near.mat
+Assets/Materials/_Space/Nebula_old/Nebula_Near.mat.meta
+Assets/Materials/_Space/Planets.meta
+Assets/Materials/_Space/Planets/PlanetAtmosphere.mat
+Assets/Materials/_Space/Planets/PlanetAtmosphere.mat.meta
+Assets/Materials/_Space/Planets/PlanetMaterial_Blue.mat
+Assets/Materials/_Space/Planets/PlanetMaterial_Blue.mat.meta
+Assets/Materials/_Space/Planets/PlanetMaterial_Earth.mat
+Assets/Materials/_Space/Planets/PlanetMaterial_Earth.mat.meta
+Assets/Materials/_Space/Planets/PlanetMaterial_Moon.mat
+Assets/Materials/_Space/Planets/PlanetMaterial_Moon.mat.meta
+Assets/Materials/_Space/Planets/PlanetMaterial_Poison.mat
+Assets/Materials/_Space/Planets/PlanetMaterial_Poison.mat.meta
+Assets/Materials/_Space/Planets/PlanetMaterial_Red.mat
+Assets/Materials/_Space/Planets/PlanetMaterial_Red.mat.meta
+Assets/Materials/_Space/StarField.mat
+Assets/Materials/_Space/StarField.mat.meta
+Assets/Materials/_UI.meta
+Assets/Materials/_UI/UI_Button_Primary.mat
+Assets/Materials/_UI/UI_Button_Primary.mat.meta
+Assets/Materials/_UI/UI_Button_Secondary.mat
+Assets/Materials/_UI/UI_Button_Secondary.mat.meta
+Assets/Materials/_UI/UI_Button_Tertiary.mat
+Assets/Materials/_UI/UI_Button_Tertiary.mat.meta
+Assets/Materials/_UI/UI_MenuButton.mat
+Assets/Materials/_UI/UI_MenuButton.mat.meta
+Assets/Materials/_UI/warning_arrow.mat
+Assets/Materials/_UI/warning_arrow.mat.meta
+Assets/MobileDependencyResolver.meta
+Assets/MobileDependencyResolver/Editor.meta
+Assets/MobileDependencyResolver/Editor/1.2.185.meta
+Assets/Models.meta
+Assets/Models/.DS_Store
+Assets/Models/_Obstacles.meta
+Assets/Models/_Obstacles/.DS_Store
+Assets/Models/_Obstacles/solar panel.meta
+Assets/Models/_Obstacles/solar panel/solar panel2.fbx
+Assets/Models/_Obstacles/solar panel/solar panel2.fbx.meta
+Assets/Models/arrow-turbo.meta
+Assets/Models/arrow-turbo/arrow-turbo.fbx
+Assets/Models/arrow-turbo/arrow-turbo.fbx.meta
+Assets/Models/arrow-turbo/tripo_convert_480cb1d1-24e3-4c8d-a198-67a78d3d9911.fbm.meta
+Assets/Models/arrow-turbo/tripo_convert_480cb1d1-24e3-4c8d-a198-67a78d3d9911.fbm/chevronarrow3dmodel_basecolor.JPEG
+Assets/Models/arrow-turbo/tripo_convert_480cb1d1-24e3-4c8d-a198-67a78d3d9911.fbm/chevronarrow3dmodel_basecolor.JPEG.meta
+Assets/Models/base-station.meta
+Assets/Models/base-station/tripo_convert_4b809ed2-593c-4b2c-9ab7-816c2b0fb463.fbm.meta
+Assets/Models/base-station/tripo_convert_4b809ed2-593c-4b2c-9ab7-816c2b0fb463.fbm/base-station_basecolor.JPEG
+Assets/Models/base-station/tripo_convert_4b809ed2-593c-4b2c-9ab7-816c2b0fb463.fbm/base-station_basecolor.JPEG.meta
+Assets/Models/base-station/tripo_convert_4b809ed2-593c-4b2c-9ab7-816c2b0fb463.fbx
+Assets/Models/base-station/tripo_convert_4b809ed2-593c-4b2c-9ab7-816c2b0fb463.fbx.meta
+Assets/Models/futuristic spaceship 3d model.meta
+Assets/Models/futuristic spaceship 3d model/.DS_Store
+Assets/Models/futuristic spaceship 3d model/spaceship_low.fbx
+Assets/Models/futuristic spaceship 3d model/spaceship_low.fbx.meta
+Assets/Models/futuristic spaceship 3d model/tripo_convert_0b21be97-807a-464e-8c2a-a2469110775f.fbm.meta
+Assets/Models/futuristic spaceship 3d model/tripo_convert_0b21be97-807a-464e-8c2a-a2469110775f.fbm/futuristicspaceship3dmodel_basecolor.JPEG
+Assets/Models/futuristic spaceship 3d model/tripo_convert_0b21be97-807a-464e-8c2a-a2469110775f.fbm/futuristicspaceship3dmodel_basecolor.JPEG.meta
+Assets/Models/laser-platform.meta
+Assets/Models/laser-platform/.DS_Store
+Assets/Models/laser-platform/laser-platform-1.mat
+Assets/Models/laser-platform/laser-platform-1.mat.meta
+Assets/Models/laser-platform/laser-platform-low.fbx
+Assets/Models/laser-platform/laser-platform-low.fbx.meta
+Assets/Models/laser-platform/tripo_convert_ccfe8b70-6945-4835-aa82-9947c0375f55.fbm.meta
+Assets/Models/laser-platform/tripo_convert_ccfe8b70-6945-4835-aa82-9947c0375f55.fbm/laser-platform_1.png
+Assets/Models/laser-platform/tripo_convert_ccfe8b70-6945-4835-aa82-9947c0375f55.fbm/laser-platform_1.png.meta
+Assets/Models/laser-platform/tripo_convert_ccfe8b70-6945-4835-aa82-9947c0375f55.fbm/laser-platform_basecolor.JPEG
+Assets/Models/laser-platform/tripo_convert_ccfe8b70-6945-4835-aa82-9947c0375f55.fbm/laser-platform_basecolor.JPEG.meta
+Assets/Models/rock.meta
+Assets/Models/rock/.DS_Store
+Assets/Models/rock/rock3_low.fbx
+Assets/Models/rock/rock3_low.fbx.meta
+Assets/Models/shield-station.meta
+Assets/Models/shield-station/Materials.meta
+Assets/Models/shield-station/Materials/ShieldStation.mat
+Assets/Models/shield-station/Materials/ShieldStation.mat.meta
+Assets/Models/shield-station/afa1c278-ff8d-4335-b82b-7a3b6d59bcec.fbm.meta
+Assets/Models/shield-station/afa1c278-ff8d-4335-b82b-7a3b6d59bcec.fbm/shield-station-tex.JPEG
+Assets/Models/shield-station/afa1c278-ff8d-4335-b82b-7a3b6d59bcec.fbm/shield-station-tex.JPEG.meta
+Assets/Models/shield-station/shield-station.fbx
+Assets/Models/shield-station/shield-station.fbx.meta
+Assets/Models/star-collectible.meta
+Assets/Models/star-collectible/star-collectible.fbx
+Assets/Models/star-collectible/star-collectible.fbx.meta
+Assets/Models/turbo-station.meta
+Assets/Models/turbo-station/.DS_Store
+Assets/Models/turbo-station/tripo_convert_be6f19dc-2e17-49f2-82da-5ff3b17ea97f.fbm.meta
+Assets/Models/turbo-station/tripo_convert_be6f19dc-2e17-49f2-82da-5ff3b17ea97f.fbm/sci-firing3dmodel_basecolor.JPEG
+Assets/Models/turbo-station/tripo_convert_be6f19dc-2e17-49f2-82da-5ff3b17ea97f.fbm/sci-firing3dmodel_basecolor.JPEG.meta
+Assets/Models/turbo-station/turbo-station.fbx
+Assets/Models/turbo-station/turbo-station.fbx.meta
+Assets/Plugins.meta
+Assets/Plugins/Android.meta
+Assets/Prefabs.meta
+Assets/Prefabs/BackgroundChunks.meta
+Assets/Prefabs/BackgroundChunks/Chunks.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Background.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Background.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Background_Nebula.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Background_Nebula.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Nebula_1.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Nebula_1.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_1.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_1.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Blue.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Blue.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Earth.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Earth.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Earth_Moon.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Earth_Moon.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Poison.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Poison.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Red.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Planet_Red.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Space_1.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_Space_1.prefab.meta
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_StarsPack_1.prefab
+Assets/Prefabs/BackgroundChunks/Chunks/Chunk_StarsPack_1.prefab.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Nebula_1.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Nebula_1.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_1.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_1.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Blue.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Blue.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Earth.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Earth.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Earth_Moon.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Earth_Moon.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Poison.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Poison.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Red.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Planet_Red.asset.meta
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Space_1.asset
+Assets/Prefabs/BackgroundChunks/SpawnItems/SpawnChunk_Space_1.asset.meta
+Assets/Prefabs/Chunks_Legacy.meta
+Assets/Prefabs/Chunks_Legacy/Easy.meta
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_1.prefab
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_1.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Bottom.prefab
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Bottom.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Middle.prefab
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Middle.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Top.prefab
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Top.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Turbo.prefab
+Assets/Prefabs/Chunks_Legacy/Easy/EasyChunk_Turbo.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Hard.meta
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_FastHazard.prefab
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_FastHazard.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_FastIntercept.prefab
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_FastIntercept.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_RiskyLongGap.prefab
+Assets/Prefabs/Chunks_Legacy/Hard/Chunk_RiskyLongGap.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium.meta
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_DualChoice.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_DualChoice.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_MediumMovingObstacle.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_MediumMovingObstacle.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_MediumVerticalShift.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/Chunk_MediumVerticalShift.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_1.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_1.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_2.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_2.prefab.meta
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_3.prefab
+Assets/Prefabs/Chunks_Legacy/Medium/MediumChunk_3.prefab.meta
+Assets/Prefabs/Docks.meta
+Assets/Prefabs/Docks/Dock.prefab
+Assets/Prefabs/Docks/Dock.prefab.meta
+Assets/Prefabs/Docks/DockAnchor.prefab
+Assets/Prefabs/Docks/DockAnchor.prefab.meta
+Assets/Prefabs/Docks/Dock_Bonus.prefab
+Assets/Prefabs/Docks/Dock_Bonus.prefab.meta
+Assets/Prefabs/Docks/Dock_Shield.prefab
+Assets/Prefabs/Docks/Dock_Shield.prefab.meta
+Assets/Prefabs/Docks/Dock_Turbo.prefab
+Assets/Prefabs/Docks/Dock_Turbo.prefab.meta
+Assets/Prefabs/Icons.meta
+Assets/Prefabs/Icons/WarningIcon.prefab
+Assets/Prefabs/Icons/WarningIcon.prefab.meta
+Assets/Prefabs/Obstacles.meta
+Assets/Prefabs/Obstacles/Asteroid_Fireball.prefab
+Assets/Prefabs/Obstacles/Asteroid_Fireball.prefab.meta
+Assets/Prefabs/Obstacles/FastObstacle.prefab
+Assets/Prefabs/Obstacles/FastObstacle.prefab.meta
+Assets/Prefabs/Obstacles/FastObstacle_Intercept.prefab
+Assets/Prefabs/Obstacles/FastObstacle_Intercept.prefab.meta
+Assets/Prefabs/Obstacles/MovingObstacle.prefab
+Assets/Prefabs/Obstacles/MovingObstacle.prefab.meta
+Assets/Prefabs/Obstacles/Obstacle.prefab
+Assets/Prefabs/Obstacles/Obstacle.prefab.meta
+Assets/Prefabs/Particles.meta
+Assets/Prefabs/Particles/TurboParticles.prefab
+Assets/Prefabs/Particles/TurboParticles.prefab.meta
+Assets/Prefabs/Planets.meta
+Assets/Prefabs/Planets/Planet_Earth.prefab
+Assets/Prefabs/Planets/Planet_Earth.prefab.meta
+Assets/Prefabs/Planets/Planet_Moon.prefab
+Assets/Prefabs/Planets/Planet_Moon.prefab.meta
+Assets/Prefabs/Planets/Planet_Red.prefab
+Assets/Prefabs/Planets/Planet_Red.prefab.meta
+Assets/Prefabs/Ships.meta
+Assets/Prefabs/Ships/Engines.meta
+Assets/Prefabs/Ships/Engines/BaseEngine.prefab
+Assets/Prefabs/Ships/Engines/BaseEngine.prefab.meta
+Assets/Prefabs/Ships/ShieldOrb.prefab
+Assets/Prefabs/Ships/ShieldOrb.prefab.meta
+Assets/Prefabs/Spawn.meta
+Assets/Prefabs/Spawn/Chunks.meta
+Assets/Prefabs/Spawn/Chunks/Easy.meta
+Assets/Prefabs/Spawn/Chunks/Easy/Ch_E_Dock_Obstacle.prefab
+Assets/Prefabs/Spawn/Chunks/Easy/Ch_E_Dock_Obstacle.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Easy/Ch_E_Empty.prefab
+Assets/Prefabs/Spawn/Chunks/Easy/Ch_E_Empty.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_2Dock_MovingObstacle_Back.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_2Dock_MovingObstacle_Back.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_2Dock_MovingObstacle_Front.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_2Dock_MovingObstacle_Front.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Bait_Bottom.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Bait_Bottom.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Bait_Top.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Bait_Top.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Intercept.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Intercept.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Obstacle.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Dock_Obstacle.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Empty.prefab
+Assets/Prefabs/Spawn/Chunks/Hard/Ch_H_Empty.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_Backward.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_Backward.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_BothSide.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_BothSide.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_Forward.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_2Dock_MovingObstacle_Forward.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_Intercept.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_Intercept.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_MovingObstacle_Bottom.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_MovingObstacle_Bottom.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_MovingObstacle_Top.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_MovingObstacle_Top.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_Obstacle.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Dock_Obstacle.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Empty.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Empty.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Bottom.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Bottom.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Middle1.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Middle1.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Middle2.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Middle2.prefab.meta
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Top.prefab
+Assets/Prefabs/Spawn/Chunks/Medium/Ch_M_Shied_Bait_Top.prefab.meta
+Assets/Prefabs/Spawn/Situations.meta
+Assets/Prefabs/Spawn/Situations/Easy.meta
+Assets/Prefabs/Spawn/Situations/Easy/Combo.meta
+Assets/Prefabs/Spawn/Situations/Easy/Combo/Sit_E_Tutorial.asset
+Assets/Prefabs/Spawn/Situations/Easy/Combo/Sit_E_Tutorial.asset.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_2Dock_Obstacle.asset
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_2Dock_Obstacle.asset.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock.asset
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock.asset.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock_2Obstacle.asset
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock_2Obstacle.asset.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock_Obstacle.asset
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Dock_Obstacle.asset.meta
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Empty.asset
+Assets/Prefabs/Spawn/Situations/Easy/Single/Sit_E_Empty.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard.meta
+Assets/Prefabs/Spawn/Situations/Hard/Combo.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_1I.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_1I.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_1O_1I.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_1O_1I.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_3O.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_3O.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_4O.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_1D_4O.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_1MO_Back.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_1MO_Back.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_1MO_Front.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_1MO_Front.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_2O.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_2O.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_3O.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_3O.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_5O_Bait_Bottom.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_5O_Bait_Bottom.asset.meta
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_5O_Bait_Top.asset
+Assets/Prefabs/Spawn/Situations/Hard/Single/Sit_H_2D_5O_Bait_Top.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium.meta
+Assets/Prefabs/Spawn/Situations/Medium/Combo.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_1MO_B.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_1MO_B.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_1MO_T.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_1MO_T.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_2O.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_2O.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_3O.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_1D_3O.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1I.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1I.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1MO_Back.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1MO_Back.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1MO_Front.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1MO_Front.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1O.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_1O.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_2MO_BF.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_2MO_BF.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_2O.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_2D_2O.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Empty.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Empty.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_B.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_B.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_M1.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_M1.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_M2.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_M2.asset.meta
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_T.asset
+Assets/Prefabs/Spawn/Situations/Medium/Single/Sit_M_Shield_Bait_T.asset.meta
+Assets/Prefabs/Systems.meta
+Assets/Prefabs/Systems/AudioManager.prefab
+Assets/Prefabs/Systems/AudioManager.prefab.meta
+Assets/Prefabs/UI.meta
+Assets/Prefabs/UI/Button_Music.prefab
+Assets/Prefabs/UI/Button_Music.prefab.meta
+Assets/Prefabs/UI/Button_Sound.prefab
+Assets/Prefabs/UI/Button_Sound.prefab.meta
+Assets/Prefabs/UI/Button_Vibration.prefab
+Assets/Prefabs/UI/Button_Vibration.prefab.meta
+Assets/Prefabs/UI/SceneLoader.prefab
+Assets/Prefabs/UI/SceneLoader.prefab.meta
+Assets/Prefabs/VFX.meta
+Assets/Prefabs/VFX/Explosion.prefab
+Assets/Prefabs/VFX/Explosion.prefab.meta
+"Assets/Prefabs/\320\241ollectibles.meta"
+"Assets/Prefabs/\320\241ollectibles/Collectible.prefab"
+"Assets/Prefabs/\320\241ollectibles/Collectible.prefab.meta"
+Assets/Readme.asset
+Assets/Readme.asset.meta
+Assets/Resources.meta
+Assets/Resources/Configs.meta
+Assets/Resources/Configs/ChunkSizeConfig.asset
+Assets/Resources/Configs/ChunkSizeConfig.asset.meta
+Assets/Scenes.meta
+Assets/Scenes/MainMenu.meta
+Assets/Scenes/MainMenu.unity
+Assets/Scenes/MainMenu.unity.meta
+Assets/Scenes/MainMenu/Global Volume Profile.asset
+Assets/Scenes/MainMenu/Global Volume Profile.asset.meta
+Assets/Scenes/SampleScene.meta
+Assets/Scenes/SampleScene.unity
+Assets/Scenes/SampleScene.unity.meta
+Assets/Scenes/SampleScene/BlurVolume Profile.asset
+Assets/Scenes/SampleScene/BlurVolume Profile.asset.meta
+Assets/Scenes/SampleScene/Main Camera Profile.asset
+Assets/Scenes/SampleScene/Main Camera Profile.asset.meta
+Assets/Scenes/SampleScene/UICamera Profile.asset
+Assets/Scenes/SampleScene/UICamera Profile.asset.meta
+Assets/Scripts.meta
+Assets/Scripts/Biomes.meta
+Assets/Scripts/Biomes/BiomeData.cs
+Assets/Scripts/Biomes/BiomeData.cs.meta
+Assets/Scripts/Biomes/BiomeManager.cs
+Assets/Scripts/Biomes/BiomeManager.cs.meta
+Assets/Scripts/Camera.meta
+Assets/Scripts/Camera/CameraFovController.cs
+Assets/Scripts/Camera/CameraFovController.cs.meta
+Assets/Scripts/Camera/CameraImpulse.cs
+Assets/Scripts/Camera/CameraImpulse.cs.meta
+Assets/Scripts/Camera/CameraOrthoPunch.cs
+Assets/Scripts/Camera/CameraOrthoPunch.cs.meta
+Assets/Scripts/Camera/CameraTilt.cs
+Assets/Scripts/Camera/CameraTilt.cs.meta
+Assets/Scripts/Camera/ColorComboGrading.cs
+Assets/Scripts/Camera/ColorComboGrading.cs.meta
+Assets/Scripts/Camera/ComboVignette.cs
+Assets/Scripts/Camera/ComboVignette.cs.meta
+Assets/Scripts/Chunks.meta
+Assets/Scripts/Chunks/BaseClasses.meta
+Assets/Scripts/Chunks/BaseClasses/EasyChunk.cs
+Assets/Scripts/Chunks/BaseClasses/EasyChunk.cs.meta
+Assets/Scripts/Chunks/BaseClasses/HardChunk.cs
+Assets/Scripts/Chunks/BaseClasses/HardChunk.cs.meta
+Assets/Scripts/Chunks/BaseClasses/MediumChunk.cs
+Assets/Scripts/Chunks/BaseClasses/MediumChunk.cs.meta
+Assets/Scripts/Chunks/BaseClasses/WorldChunkBase.cs
+Assets/Scripts/Chunks/BaseClasses/WorldChunkBase.cs.meta
+Assets/Scripts/Chunks/ChunkContext.cs
+Assets/Scripts/Chunks/ChunkContext.cs.meta
+Assets/Scripts/Chunks/ChunkDefinition.cs
+Assets/Scripts/Chunks/ChunkDefinition.cs.meta
+Assets/Scripts/Chunks/ChunkIntensity.cs
+Assets/Scripts/Chunks/ChunkIntensity.cs.meta
+Assets/Scripts/Chunks/ChunkSpawner_Legacy.cs
+Assets/Scripts/Chunks/ChunkSpawner_Legacy.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_DualChoice.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_DualChoice.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_InterceptSimple.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_InterceptSimple.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumMovingObstacle.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumMovingObstacle.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumVerticalShift.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_MediumVerticalShift.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_RiskyLongGap.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_RiskyLongGap.cs.meta
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_SimpleStation.cs
+Assets/Scripts/Chunks/ChunkVariants_Legacy/Chunk_SimpleStation.cs.meta
+Assets/Scripts/Chunks/Common.meta
+Assets/Scripts/Chunks/Common/ChunkCollectibleGenerator.cs
+Assets/Scripts/Chunks/Common/ChunkCollectibleGenerator.cs.meta
+Assets/Scripts/Chunks/Common/ChunkIntercept.cs
+Assets/Scripts/Chunks/Common/ChunkIntercept.cs.meta
+Assets/Scripts/Chunks/Common/ChunkMovingObstacle.cs
+Assets/Scripts/Chunks/Common/ChunkMovingObstacle.cs.meta
+Assets/Scripts/Chunks/Common/ChunkObstacleDockGenerator.cs
+Assets/Scripts/Chunks/Common/ChunkObstacleDockGenerator.cs.meta
+Assets/Scripts/Chunks/Easy.meta
+Assets/Scripts/Chunks/Easy/EasyChunk_Dock.cs
+Assets/Scripts/Chunks/Easy/EasyChunk_Dock.cs.meta
+Assets/Scripts/Chunks/Easy/EasyChunk_Dock_Obstacle.cs
+Assets/Scripts/Chunks/Easy/EasyChunk_Dock_Obstacle.cs.meta
+Assets/Scripts/Chunks/Medium.meta
+Assets/Scripts/Chunks/WorldChunk.cs
+Assets/Scripts/Chunks/WorldChunk.cs.meta
+Assets/Scripts/Collectibles.meta
+Assets/Scripts/Collectibles/Collectible.cs
+Assets/Scripts/Collectibles/Collectible.cs.meta
+Assets/Scripts/Collectibles/CurrencyManager.cs
+Assets/Scripts/Collectibles/CurrencyManager.cs.meta
+Assets/Scripts/Configs.meta
+Assets/Scripts/Configs/ChunkSizeConfig.cs
+Assets/Scripts/Configs/ChunkSizeConfig.cs.meta
+Assets/Scripts/Docks.meta
+Assets/Scripts/Docks/Dock.cs
+Assets/Scripts/Docks/Dock.cs.meta
+Assets/Scripts/Docks/DockEnergySwirl.cs
+Assets/Scripts/Docks/DockEnergySwirl.cs.meta
+Assets/Scripts/Docks/DockPulse.cs
+Assets/Scripts/Docks/DockPulse.cs.meta
+Assets/Scripts/Docks/DockRotation.cs
+Assets/Scripts/Docks/DockRotation.cs.meta
+Assets/Scripts/Docks/Dock_Shield.cs
+Assets/Scripts/Docks/Dock_Shield.cs.meta
+Assets/Scripts/Docks/TurboDock.cs
+Assets/Scripts/Docks/TurboDock.cs.meta
+Assets/Scripts/Obstacles.meta
+Assets/Scripts/Obstacles/AsteroidIdleRotation.cs
+Assets/Scripts/Obstacles/AsteroidIdleRotation.cs.meta
+Assets/Scripts/Obstacles/FastHazardInterceptObstacle.cs
+Assets/Scripts/Obstacles/FastHazardInterceptObstacle.cs.meta
+Assets/Scripts/Obstacles/FastHazardObstacle.cs
+Assets/Scripts/Obstacles/FastHazardObstacle.cs.meta
+Assets/Scripts/Obstacles/MovingObstacle.cs
+Assets/Scripts/Obstacles/MovingObstacle.cs.meta
+Assets/Scripts/Obstacles/Obstacle.cs
+Assets/Scripts/Obstacles/Obstacle.cs.meta
+Assets/Scripts/Obstacles/RandomObstacle.cs
+Assets/Scripts/Obstacles/RandomObstacle.cs.meta
+Assets/Scripts/Parallax.meta
+Assets/Scripts/Parallax/BackgroundCamera.cs
+Assets/Scripts/Parallax/BackgroundCamera.cs.meta
+Assets/Scripts/Parallax/BackgroundLayerSpawner.cs
+Assets/Scripts/Parallax/BackgroundLayerSpawner.cs.meta
+Assets/Scripts/Parallax/BackgroundScroller.cs
+Assets/Scripts/Parallax/BackgroundScroller.cs.meta
+Assets/Scripts/Parallax/BackgroundSpawnEntry.cs
+Assets/Scripts/Parallax/BackgroundSpawnEntry.cs.meta
+Assets/Scripts/Parallax/BackgroundTiling.cs
+Assets/Scripts/Parallax/BackgroundTiling.cs.meta
+Assets/Scripts/Parallax/NebulaParallax.cs
+Assets/Scripts/Parallax/NebulaParallax.cs.meta
+Assets/Scripts/Parallax/ParallaxLayer.cs
+Assets/Scripts/Parallax/ParallaxLayer.cs.meta
+Assets/Scripts/Parallax/ParallaxTiling.cs
+Assets/Scripts/Parallax/ParallaxTiling.cs.meta
+Assets/Scripts/Parallax/PlanetChunk.cs
+Assets/Scripts/Parallax/PlanetChunk.cs.meta
+Assets/Scripts/Player.meta
+Assets/Scripts/Player/DestroyAfterParticles.cs
+Assets/Scripts/Player/DestroyAfterParticles.cs.meta
+Assets/Scripts/Player/GrappleController.cs
+Assets/Scripts/Player/GrappleController.cs.meta
+Assets/Scripts/Player/GrappleRope.cs
+Assets/Scripts/Player/GrappleRope.cs.meta
+Assets/Scripts/Player/PlayerMovement.cs
+Assets/Scripts/Player/PlayerMovement.cs.meta
+Assets/Scripts/Player/PlayerShield.cs
+Assets/Scripts/Player/PlayerShield.cs.meta
+Assets/Scripts/Player/ShipAccelerationTilt.cs
+Assets/Scripts/Player/ShipAccelerationTilt.cs.meta
+Assets/Scripts/Player/ShipEngine.cs
+Assets/Scripts/Player/ShipEngine.cs.meta
+Assets/Scripts/Player/ShipIdleFloat.cs
+Assets/Scripts/Player/ShipIdleFloat.cs.meta
+Assets/Scripts/SpawnSystem.meta
+Assets/Scripts/SpawnSystem/Definition.meta
+Assets/Scripts/SpawnSystem/Definition/SituationDefinition.cs
+Assets/Scripts/SpawnSystem/Definition/SituationDefinition.cs.meta
+Assets/Scripts/SpawnSystem/SituationDirector.cs
+Assets/Scripts/SpawnSystem/SituationDirector.cs.meta
+Assets/Scripts/SpawnSystem/SituationSpawner.cs
+Assets/Scripts/SpawnSystem/SituationSpawner.cs.meta
+Assets/Scripts/System.meta
+Assets/Scripts/System/AudioManager.cs
+Assets/Scripts/System/AudioManager.cs.meta
+Assets/Scripts/System/Bootstrap.cs
+Assets/Scripts/System/Bootstrap.cs.meta
+Assets/Scripts/System/ComboSystem.cs
+Assets/Scripts/System/ComboSystem.cs.meta
+Assets/Scripts/System/DangerIndicatorSystem.cs
+Assets/Scripts/System/DangerIndicatorSystem.cs.meta
+Assets/Scripts/System/DifficultyManager.cs
+Assets/Scripts/System/DifficultyManager.cs.meta
+Assets/Scripts/System/DistanceTracker.cs
+Assets/Scripts/System/DistanceTracker.cs.meta
+Assets/Scripts/System/GameManager.cs
+Assets/Scripts/System/GameManager.cs.meta
+Assets/Scripts/System/PlayerPrefsManager.cs
+Assets/Scripts/System/PlayerPrefsManager.cs.meta
+Assets/Scripts/System/TimeEffects.cs
+Assets/Scripts/System/TimeEffects.cs.meta
+Assets/Scripts/System/TurboVisualController.cs
+Assets/Scripts/System/TurboVisualController.cs.meta
+Assets/Scripts/System/WorldShifter.cs
+Assets/Scripts/System/WorldShifter.cs.meta
+Assets/Scripts/UI.meta
+Assets/Scripts/UI/CoinCounterUI.cs
+Assets/Scripts/UI/CoinCounterUI.cs.meta
+Assets/Scripts/UI/ComboUI.cs
+Assets/Scripts/UI/ComboUI.cs.meta
+Assets/Scripts/UI/DangerIndicatorUI.cs
+Assets/Scripts/UI/DangerIndicatorUI.cs.meta
+Assets/Scripts/UI/GameOverUI.cs
+Assets/Scripts/UI/GameOverUI.cs.meta
+Assets/Scripts/UI/HUDDistance.cs
+Assets/Scripts/UI/HUDDistance.cs.meta
+Assets/Scripts/UI/MainMenuIdleItem.cs
+Assets/Scripts/UI/MainMenuIdleItem.cs.meta
+Assets/Scripts/UI/MainMenuUI.cs
+Assets/Scripts/UI/MainMenuUI.cs.meta
+Assets/Scripts/UI/PauseController.cs
+Assets/Scripts/UI/PauseController.cs.meta
+Assets/Scripts/UI/PerfectPopup.cs
+Assets/Scripts/UI/PerfectPopup.cs.meta
+Assets/Scripts/UI/SceneLoader.cs
+Assets/Scripts/UI/SceneLoader.cs.meta
+Assets/Scripts/UI/SoundButtonsUI.cs
+Assets/Scripts/UI/SoundButtonsUI.cs.meta
+Assets/Settings.meta
+Assets/Settings/Build Profiles.meta
+"Assets/Settings/Build Profiles/New Android\342\204\242 Profile.asset"
+"Assets/Settings/Build Profiles/New Android\342\204\242 Profile.asset.meta"
+Assets/Settings/Build Profiles/New iOS Profile.asset
+Assets/Settings/Build Profiles/New iOS Profile.asset.meta
+Assets/Settings/DefaultVolumeProfile.asset
+Assets/Settings/DefaultVolumeProfile.asset.meta
+Assets/Settings/Mobile_RPAsset.asset
+Assets/Settings/Mobile_RPAsset.asset.meta
+Assets/Settings/Mobile_Renderer.asset
+Assets/Settings/Mobile_Renderer.asset.meta
+Assets/Settings/PC_RPAsset.asset
+Assets/Settings/PC_RPAsset.asset.meta
+Assets/Settings/PC_Renderer.asset
+Assets/Settings/PC_Renderer.asset.meta
+Assets/Settings/SampleSceneProfile.asset
+Assets/Settings/SampleSceneProfile.asset.meta
+Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta
+Assets/Shaders.meta
+Assets/Shaders/.DS_Store
+Assets/Shaders/Asteroids.meta
+Assets/Shaders/Asteroids/SG_Asteroid.shadergraph
+Assets/Shaders/Asteroids/SG_Asteroid.shadergraph.meta
+Assets/Shaders/PulseRings_Shader.shadergraph
+Assets/Shaders/PulseRings_Shader.shadergraph.meta
+Assets/Shaders/SG_Anchor.shadergraph
+Assets/Shaders/SG_Anchor.shadergraph.meta
+Assets/Shaders/SG_AsteroidTrail.shadergraph
+Assets/Shaders/SG_AsteroidTrail.shadergraph.meta
+Assets/Shaders/SG_Asteroid_Stone.shadergraph
+Assets/Shaders/SG_Asteroid_Stone.shadergraph.meta
+Assets/Shaders/SG_HexShield.shadergraph
+Assets/Shaders/SG_HexShield.shadergraph.meta
+Assets/Shaders/SG_Holographic.shadergraph
+Assets/Shaders/SG_Holographic.shadergraph.meta
+Assets/Shaders/SG_Laser.shadergraph
+Assets/Shaders/SG_Laser.shadergraph.meta
+Assets/Shaders/SG_ProceduralNebula.shadergraph
+Assets/Shaders/SG_ProceduralNebula.shadergraph.meta
+Assets/Shaders/SG_StationVortex.shadergraph
+Assets/Shaders/SG_StationVortex.shadergraph.meta
+Assets/Shaders/_Space.meta
+Assets/Shaders/_Space/.DS_Store
+Assets/Shaders/_Space/Planet.meta
+Assets/Shaders/_Space/Planet/.DS_Store
+Assets/Shaders/_Space/Planet/PlanetAtmosphereShader.shadergraph
+Assets/Shaders/_Space/Planet/PlanetAtmosphereShader.shadergraph.meta
+Assets/Shaders/_Space/Planet/PlanetShader.shadergraph
+Assets/Shaders/_Space/Planet/PlanetShader.shadergraph.meta
+Assets/Shaders/_Space/Planet/PlanetSurface.hlsl
+Assets/Shaders/_Space/Planet/PlanetSurface.hlsl.meta
+Assets/Shaders/_Space/SG_Nebula.shadergraph
+Assets/Shaders/_Space/SG_Nebula.shadergraph.meta
+Assets/Shaders/_Space/SG_Space_Starfield.shadergraph
+Assets/Shaders/_Space/SG_Space_Starfield.shadergraph.meta
+Assets/Shaders/_Space/SSG_AutoScroll.shadersubgraph
+Assets/Shaders/_Space/SSG_AutoScroll.shadersubgraph.meta
+Assets/Shaders/_Space/SSG_Nebula_Random.shadersubgraph
+Assets/Shaders/_Space/SSG_Nebula_Random.shadersubgraph.meta
+Assets/Shaders/_Space/SSG_PositionScroll.shadersubgraph
+Assets/Shaders/_Space/SSG_PositionScroll.shadersubgraph.meta
+Assets/Shaders/_UI.meta
+Assets/Shaders/_UI/UI_ButtonShader.shadergraph
+Assets/Shaders/_UI/UI_ButtonShader.shadergraph.meta
+Assets/Shaders/_UI/UI_MenuButtonShader.shadergraph
+Assets/Shaders/_UI/UI_MenuButtonShader.shadergraph.meta
+Assets/Sprites.meta
+Assets/Sprites/.DS_Store
+Assets/Sprites/_MainMenu.meta
+Assets/Sprites/_MainMenu/.DS_Store
+Assets/Sprites/_MainMenu/base.jpg
+Assets/Sprites/_MainMenu/base.jpg.meta
+Assets/Sprites/_MainMenu/menu_background.png
+Assets/Sprites/_MainMenu/menu_background.png.meta
+Assets/Sprites/_MainMenu/menu_background_2.png
+Assets/Sprites/_MainMenu/menu_background_2.png.meta
+Assets/Sprites/_MainMenu/menu_button.png
+Assets/Sprites/_MainMenu/menu_button.png.meta
+Assets/Sprites/_MainMenu/menu_meteor1.png
+Assets/Sprites/_MainMenu/menu_meteor1.png.meta
+Assets/Sprites/_MainMenu/menu_meteor2.png
+Assets/Sprites/_MainMenu/menu_meteor2.png.meta
+Assets/Sprites/_MainMenu/menu_planet_full.png
+Assets/Sprites/_MainMenu/menu_planet_full.png.meta
+Assets/Sprites/_MainMenu/menu_ship.png
+Assets/Sprites/_MainMenu/menu_ship.png.meta
+Assets/Sprites/_MainMenu/settings.png
+Assets/Sprites/_MainMenu/settings.png.meta
+Assets/Sprites/app_icon.png
+Assets/Sprites/app_icon.png.meta
+Assets/Sprites/bg_space_mono.png
+Assets/Sprites/bg_space_mono.png.meta
+Assets/Sprites/bg_space_seamless_1.png
+Assets/Sprites/bg_space_seamless_1.png.meta
+Assets/Sprites/blue-neon-frame.png
+Assets/Sprites/blue-neon-frame.png.meta
+Assets/Sprites/button_mask_bw_sliced.png
+Assets/Sprites/button_mask_bw_sliced.png.meta
+Assets/Sprites/clapperboard.png
+Assets/Sprites/clapperboard.png.meta
+Assets/Sprites/frame_bold.png
+Assets/Sprites/frame_bold.png.meta
+Assets/Sprites/frame_mask.png
+Assets/Sprites/frame_mask.png.meta
+Assets/Sprites/frame_slim.png
+Assets/Sprites/frame_slim.png.meta
+Assets/Sprites/neon_frame.png
+Assets/Sprites/neon_frame.png.meta
+Assets/Sprites/neon_frame_slice.png
+Assets/Sprites/neon_frame_slice.png.meta
+Assets/Sprites/pause.png
+Assets/Sprites/pause.png.meta
+Assets/Sprites/play-button.png
+Assets/Sprites/play-button.png.meta
+Assets/Sprites/sound.png
+Assets/Sprites/sound.png.meta
+Assets/Sprites/star-collectible-sprite.asset
+Assets/Sprites/star-collectible-sprite.asset.meta
+Assets/Sprites/star-collectible-sprite.png
+Assets/Sprites/star-collectible-sprite.png.meta
+Assets/Sprites/vibrate.png
+Assets/Sprites/vibrate.png.meta
+Assets/Sprites/volume.png
+Assets/Sprites/volume.png.meta
+Assets/Sprites/warning_arrow.png
+Assets/Sprites/warning_arrow.png.meta
+Assets/TextMesh Pro.meta
+Assets/TextMesh Pro/.DS_Store
+Assets/TextMesh Pro/Fonts.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Resources.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/Sprite Assets.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Shaders.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Sprites.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/Textures.meta
+Assets/Textures/.DS_Store
+Assets/Textures/Noise1.png
+Assets/Textures/Noise1.png.meta
+Assets/Textures/Noise2.png
+Assets/Textures/Noise2.png.meta
+Assets/Textures/asteroids.meta
+Assets/Textures/asteroids/.DS_Store
+Assets/Textures/asteroids/asteroid-albedo.png
+Assets/Textures/asteroids/asteroid-albedo.png.meta
+Assets/Textures/asteroids/asteroid-emission.png
+Assets/Textures/asteroids/asteroid-emission.png.meta
+Assets/Textures/asteroids/solar_panel_final.png
+Assets/Textures/asteroids/solar_panel_final.png.meta
+Assets/Textures/button_mask_bw.png
+Assets/Textures/button_mask_bw.png.meta
+Assets/Textures/circle.png
+Assets/Textures/circle.png.meta
+Assets/Textures/hexpattern.png
+Assets/Textures/hexpattern.png.meta
+Assets/Textures/laser grayscale.png
+Assets/Textures/laser grayscale.png.meta
+Assets/Textures/laser.png
+Assets/Textures/laser.png.meta
+Assets/Textures/nebula mask.png
+Assets/Textures/nebula mask.png.meta
+Assets/Textures/ring_tex.png
+Assets/Textures/ring_tex.png.meta
+Assets/Textures/simple circle.png
+Assets/Textures/simple circle.png.meta
+Assets/Textures/simple texture.png
+Assets/Textures/simple texture.png.meta
+Assets/Textures/transparent-base-texture.png
+Assets/Textures/transparent-base-texture.png.meta
+Assets/TutorialInfo.meta
+Assets/TutorialInfo/Icons.meta
+Assets/TutorialInfo/Icons/Help_Icon.png
+Assets/TutorialInfo/Icons/Help_Icon.png.meta
+Assets/TutorialInfo/Icons/Mobile 3D.png
+Assets/TutorialInfo/Icons/Mobile 3D.png.meta
+Assets/TutorialInfo/Layout.wlt
+Assets/TutorialInfo/Layout.wlt.meta
+Assets/TutorialInfo/Scripts.meta
+Assets/TutorialInfo/Scripts/Editor.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TutorialInfo/Scripts/Readme.cs
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Packages/manifest.json
+Packages/packages-lock.json
+ProjectSettings/AudioManager.asset
+ProjectSettings/ClusterInputManager.asset
+ProjectSettings/DynamicsManager.asset
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorSettings.asset
+ProjectSettings/GraphicsSettings.asset
+ProjectSettings/InputManager.asset
+ProjectSettings/MemorySettings.asset
+ProjectSettings/MultiplayerManager.asset
+ProjectSettings/NavMeshAreas.asset
+ProjectSettings/NotificationsSettings.asset
+ProjectSettings/PackageManagerSettings.asset
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/Physics2DSettings.asset
+ProjectSettings/PresetManager.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/QualitySettings.asset
+ProjectSettings/SceneTemplateSettings.json
+ProjectSettings/ShaderGraphSettings.asset
+ProjectSettings/TagManager.asset
+ProjectSettings/TimeManager.asset
+ProjectSettings/URPProjectSettings.asset
+ProjectSettings/UnityConnectSettings.asset
+ProjectSettings/VFXManager.asset
+ProjectSettings/VersionControlSettings.asset
+ProjectSettings/XRSettings.asset
+astro grap.sln
+astro grap_BurstDebugInformation_DoNotShip/tempburstlibs/arm64-v8a/lib_burst_generated.txt
+build-android.apk
+testbuild.app/Contents/Frameworks/UnityPlayer.dylib
+testbuild.app/Contents/Frameworks/libMonoPosixHelper.dylib
+testbuild.app/Contents/Frameworks/libmono-native.dylib
+testbuild.app/Contents/Frameworks/libmonobdwgc-2.0.dylib
+testbuild.app/Contents/Info.plist
+testbuild.app/Contents/MacOS/astro grap
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.5/machine.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.5/settings.map
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/4.5/web.config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/browscap.ini
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/config
+testbuild.app/Contents/MonoBleedingEdge/etc/mono/mconfig/config.xml
+testbuild.app/Contents/PlugIns/lib_burst_generated.bundle
+testbuild.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll
+testbuild.app/Contents/Resources/Data/Managed/Mono.Security.dll
+testbuild.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Configuration.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Core.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Data.DataSetExtensions.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Data.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Drawing.dll
+testbuild.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll
+testbuild.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll
+testbuild.app/Contents/Resources/Data/Managed/System.IO.Compression.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Net.Http.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Numerics.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Security.dll
+testbuild.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Transactions.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll
+testbuild.app/Contents/Resources/Data/Managed/System.Xml.dll
+testbuild.app/Contents/Resources/Data/Managed/System.dll
+testbuild.app/Contents/Resources/Data/Managed/Tayx.Graphy.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.AdaptivePerformance.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Burst.Unsafe.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Burst.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Collections.LowLevel.ILSupport.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Collections.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.InputSystem.ForUI.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.InputSystem.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Multiplayer.Center.Common.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Profiling.Core.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Rendering.LightTransport.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.Timeline.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.VisualScripting.Core.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.VisualScripting.Flow.dll
+testbuild.app/Contents/Resources/Data/Managed/Unity.VisualScripting.State.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ARModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AccessibilityModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AndroidJNIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AnimationModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AssetBundleModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.AudioModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ClothModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ClusterInputModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ClusterRendererModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ContentLoadModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.CoreModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.CrashReportingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.DSPGraphModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.DirectorModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.GIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.GameCenterModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.GridModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.HierarchyCoreModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.HotReloadModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.IMGUIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ImageConversionModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.InputForUIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.InputLegacyModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.InputModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.JSONSerializeModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.LocalizationModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.MarshallingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.MultiplayerModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ParticleSystemModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.PerformanceReportingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.Physics2DModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.PhysicsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.PropertiesModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ScreenCaptureModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.SharedInternalsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.SpriteMaskModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.SpriteShapeModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.StreamingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.SubstanceModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.SubsystemsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TLSModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TerrainModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TerrainPhysicsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TextCoreFontEngineModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TextCoreTextEngineModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TextRenderingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.TilemapModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UIModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UmbraModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityAnalyticsModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityConnectModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityCurlModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityTestProtocolModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.VFXModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.VRModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.VehiclesModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.VideoModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.VirtualTexturingModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.WindModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.XRModule.dll
+testbuild.app/Contents/Resources/Data/Managed/UnityEngine.dll
+testbuild.app/Contents/Resources/Data/Managed/mscorlib.dll
+testbuild.app/Contents/Resources/Data/Managed/netstandard.dll
+testbuild.app/Contents/Resources/Data/Resources/unity default resources
+testbuild.app/Contents/Resources/Data/Resources/unity_builtin_extra
+testbuild.app/Contents/Resources/Data/RuntimeInitializeOnLoads.json
+testbuild.app/Contents/Resources/Data/ScriptingAssemblies.json
+testbuild.app/Contents/Resources/Data/app.info
+testbuild.app/Contents/Resources/Data/boot.config
+testbuild.app/Contents/Resources/Data/globalgamemanagers
+testbuild.app/Contents/Resources/Data/globalgamemanagers.assets
+testbuild.app/Contents/Resources/Data/globalgamemanagers.assets.resS
+testbuild.app/Contents/Resources/Data/level0
+testbuild.app/Contents/Resources/Data/resources.assets
+testbuild.app/Contents/Resources/Data/resources.assets.resS
+testbuild.app/Contents/Resources/Data/sharedassets0.assets
+testbuild.app/Contents/Resources/Data/sharedassets0.assets.resS
+testbuild.app/Contents/Resources/DefaultPreferences.plist
+testbuild.app/Contents/Resources/MainMenu.nib/designable.nib
+testbuild.app/Contents/Resources/MainMenu.nib/keyedobjects.nib
+testbuild.app/Contents/Resources/PrivacyInfo.xcprivacy
+testbuild.app/Contents/_CodeSignature/CodeResources
