@@ -3,6 +3,8 @@
     "com.tayx.graphy": "https://github.com/Tayx94/graphy.git",
     "com.tripo3d.unitybridge": "file:/Users/egorbrusnev/Downloads/Tripo3d_Unity_Bridge",
     "com.unity.2d.sprite": "1.0.0",
+    "com.unity.adaptiveperformance.google.android": "5.1.6",
+    "com.unity.adaptiveperformance.samsung.android": "5.1.0",
     "com.unity.cinemachine": "3.1.5",
     "com.unity.collab-proxy": "2.11.3",
     "com.unity.feature.mobile": "1.0.0",

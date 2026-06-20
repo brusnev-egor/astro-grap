@@ -20,7 +20,7 @@ public class BackgroundScroller : MonoBehaviour
         _renderer.GetPropertyBlock(_mpb);
 
         Vector3 v = _player.linearVelocity;
-        Debug.Log("Velocity = " + v);
+
         _mpb.SetVector(VelocityID, new Vector2(v.x, 0));
 
         _renderer.SetPropertyBlock(_mpb);

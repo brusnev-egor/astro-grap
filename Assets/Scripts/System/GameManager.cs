@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
         // уничтожаем игрока
         // Destroy(playerObject);
         playerObject.SetActive(false);
-        Debug.Log("GAME OVER");
     }
 
     public void OnPlayerHitObstacle()
@@ -89,7 +88,6 @@ public class GameManager : MonoBehaviour
         ComboSystem.Instance.RegisterDock(isPerfect);
         if (isPerfect)
         {
-            Debug.Log("PERFECT DOCK!");
 
             // TimeEffects.Instance.SlowMotion(0.2f, 0.18f);
             // CameraShake.Instance.Shake(1.2f, 0.15f);

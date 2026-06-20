@@ -27,8 +27,6 @@ public class DangerIndicatorUI : MonoBehaviour
 
         float rightEdge = canvasRect.rect.width / 2f;
 
-        Debug.Log("Edge " + rightEdge + " : " + canvasRect.rect);
-
         rect.localPosition = new Vector3(
             rightEdge - 100,
             localPoint.y,

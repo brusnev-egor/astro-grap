@@ -17,7 +17,7 @@ public class EasyChunk_Dock : EasyChunk
     {
         if (dockPrefab == null)
         {
-            Debug.LogError("Dock prefab not assigned");
+            // Debug.LogError("Dock prefab not assigned");
             return;
         }
 

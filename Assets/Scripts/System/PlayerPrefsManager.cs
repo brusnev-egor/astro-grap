@@ -14,7 +14,6 @@ public class PlayerPrefsManager
 
     public static bool IsSoundEnabled()
     {
-        Debug.Log("value: " + PlayerPrefs.GetInt(VIBRATION_PREF_KEY));
         return PlayerPrefs.GetInt(SOUND_PREF_KEY) == 1;
     }
 
@@ -27,7 +26,6 @@ public class PlayerPrefsManager
     {
         PlayerPrefs.SetInt(MUSIC_PREF_KEY, value);
         PlayerPrefs.Save();
-        Debug.Log("Save");
     }
 
     public static void SetSound(int value)

@@ -77,7 +77,7 @@ public class ChunkObstacleDockGenerator: MonoBehaviour, IChunkComponent
         }
         if (prefabs.Length == 0)
             {
-                Debug.LogError("Prefab not assigned");
+                // Debug.LogError("Prefab not assigned");
                 return;
             }
 

@@ -1,8 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,13 +12,11 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        // SceneManager.LoadScene("SampleScene");
         _sceneLoader.LoadScene("SampleScene");
     }
 
     public void Shop()
     {
-        Debug.Log("Shop");
     }
 
     public void Settings()

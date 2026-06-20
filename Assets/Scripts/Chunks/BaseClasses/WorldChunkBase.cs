@@ -40,7 +40,7 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk, IConfigurable
     public virtual void OnEnterView()
     {
         isActive = true;
-        Debug.Log($"{name} ENTER");
+        // Debug.Log($"{name} ENTER");
         foreach (var c in lifecycleComponents)
             c.OnChunkEnterView();
 
@@ -49,7 +49,7 @@ public abstract class WorldChunkBase : MonoBehaviour, IWorldChunk, IConfigurable
     public virtual void OnExitView()
     {
         isActive = false;
-        Debug.Log($"{name} EXIT");
+        // Debug.Log($"{name} EXIT");
         foreach (var c in lifecycleComponents)
             c.OnChunkExitView();
 
