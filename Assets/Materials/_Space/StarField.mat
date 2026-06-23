@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 9
+  version: 10
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -59,7 +59,7 @@ Material:
     - _Dencity: 22
     - _QueueControl: 0
     - _QueueOffset: -50
-    - _ScrollSpeed: 0.01
+    - _ScrollSpeed: 0
     - _StarSize: 0.033
     - _Velocity: 0
     m_Colors:

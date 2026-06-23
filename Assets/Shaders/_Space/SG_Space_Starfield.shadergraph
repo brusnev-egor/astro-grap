@@ -516,7 +516,7 @@
         "preventRotation": false
     },
     "m_Path": "Shader Graphs",
-    "m_GraphPrecision": 1,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -560,7 +560,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "SSG_PositionScroll",
+    "m_Name": "SSG_Position Scroll",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -980,7 +980,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "SSG_AutoScroll",
+    "m_Name": "SSG_Auto Scroll",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -1285,6 +1285,7 @@
     },
     "isMainTexture": false,
     "useTilingAndOffset": false,
+    "isHDR": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }

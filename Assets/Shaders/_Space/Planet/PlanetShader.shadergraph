@@ -463,7 +463,7 @@
         "preventRotation": false
     },
     "m_Path": "Shader Graphs",
-    "m_GraphPrecision": 1,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -1596,10 +1596,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -208.5,
-            "y": 107.5,
-            "width": 234.0,
-            "height": 94.0
+            "x": -208.50003051757813,
+            "y": 107.00001525878906,
+            "width": 234.00001525878907,
+            "height": 238.00001525878907
         }
     },
     "m_Slots": [

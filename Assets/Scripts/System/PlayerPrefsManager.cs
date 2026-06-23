@@ -9,7 +9,8 @@ public class PlayerPrefsManager
 
     public static bool IsMusicEnabled()
     {
-        return PlayerPrefs.GetInt(MUSIC_PREF_KEY) == 1;
+        int value = PlayerPrefs.GetInt(MUSIC_PREF_KEY);
+        return value == 1 || value == null;
     }
 
     public static bool IsSoundEnabled()
